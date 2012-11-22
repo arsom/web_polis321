@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="WebServiceDetailAssetService" targetNamespace="http://Asset.th/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://Asset.th/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://Asset.th/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<import namespace="http://Asset.th/" schemaLocation="http://localhost:8080/webServiceAsset/services/WebServiceDetailAssetPort?xsd=webservicedetailasset_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="GetLostAssetAccessoriesDetail">
+    <wsdl:part name="parameters" element="tns:GetLostAssetAccessoriesDetail">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetAccessoriesDetailResponse">
+    <wsdl:part name="parameters" element="tns:GetLostAssetAccessoriesDetailResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetAccessoriesResponse">
+    <wsdl:part name="parameters" element="tns:GetLostAssetAccessoriesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetElecCharacterResponse">
+    <wsdl:part name="parameters" element="tns:GetLostAssetElecCharacterResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetAccessories">
+    <wsdl:part name="parameters" element="tns:GetLostAssetAccessories">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetGunDetailResponse">
+    <wsdl:part name="parameters" element="tns:GetLostAssetGunDetailResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetElecBrand">
+    <wsdl:part name="parameters" element="tns:GetLostAssetElecBrand">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetGunBrand">
+    <wsdl:part name="parameters" element="tns:GetLostAssetGunBrand">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetUnknowsDetailResponse">
+    <wsdl:part name="parameters" element="tns:GetLostAssetUnknowsDetailResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetUnknows">
+    <wsdl:part name="parameters" element="tns:GetLostAssetUnknows">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetGunDetail">
+    <wsdl:part name="parameters" element="tns:GetLostAssetGunDetail">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetElecResponse">
+    <wsdl:part name="parameters" element="tns:GetLostAssetElecResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetGunResponse">
+    <wsdl:part name="parameters" element="tns:GetLostAssetGunResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetGunBrandResponse">
+    <wsdl:part name="parameters" element="tns:GetLostAssetGunBrandResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetElecCharacter">
+    <wsdl:part name="parameters" element="tns:GetLostAssetElecCharacter">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetGun">
+    <wsdl:part name="parameters" element="tns:GetLostAssetGun">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SQLException">
+    <wsdl:part name="SQLException" element="tns:SQLException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetUnknowsDetail">
+    <wsdl:part name="parameters" element="tns:GetLostAssetUnknowsDetail">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetElec">
+    <wsdl:part name="parameters" element="tns:GetLostAssetElec">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetUnknowsResponse">
+    <wsdl:part name="parameters" element="tns:GetLostAssetUnknowsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetElecBrandResponse">
+    <wsdl:part name="parameters" element="tns:GetLostAssetElecBrandResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="GetAssetDetail">
+    <wsdl:operation name="GetLostAssetGunBrand">
+      <wsdl:input name="GetLostAssetGunBrand" message="tns:GetLostAssetGunBrand">
+    </wsdl:input>
+      <wsdl:output name="GetLostAssetGunBrandResponse" message="tns:GetLostAssetGunBrandResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetGunDetail">
+      <wsdl:input name="GetLostAssetGunDetail" message="tns:GetLostAssetGunDetail">
+    </wsdl:input>
+      <wsdl:output name="GetLostAssetGunDetailResponse" message="tns:GetLostAssetGunDetailResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetElecBrand">
+      <wsdl:input name="GetLostAssetElecBrand" message="tns:GetLostAssetElecBrand">
+    </wsdl:input>
+      <wsdl:output name="GetLostAssetElecBrandResponse" message="tns:GetLostAssetElecBrandResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetElecCharacter">
+      <wsdl:input name="GetLostAssetElecCharacter" message="tns:GetLostAssetElecCharacter">
+    </wsdl:input>
+      <wsdl:output name="GetLostAssetElecCharacterResponse" message="tns:GetLostAssetElecCharacterResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetUnknowsDetail">
+      <wsdl:input name="GetLostAssetUnknowsDetail" message="tns:GetLostAssetUnknowsDetail">
+    </wsdl:input>
+      <wsdl:output name="GetLostAssetUnknowsDetailResponse" message="tns:GetLostAssetUnknowsDetailResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetGun">
+      <wsdl:input name="GetLostAssetGun" message="tns:GetLostAssetGun">
+    </wsdl:input>
+      <wsdl:output name="GetLostAssetGunResponse" message="tns:GetLostAssetGunResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetAccessories">
+      <wsdl:input name="GetLostAssetAccessories" message="tns:GetLostAssetAccessories">
+    </wsdl:input>
+      <wsdl:output name="GetLostAssetAccessoriesResponse" message="tns:GetLostAssetAccessoriesResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetUnknows">
+      <wsdl:input name="GetLostAssetUnknows" message="tns:GetLostAssetUnknows">
+    </wsdl:input>
+      <wsdl:output name="GetLostAssetUnknowsResponse" message="tns:GetLostAssetUnknowsResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetAccessoriesDetail">
+      <wsdl:input name="GetLostAssetAccessoriesDetail" message="tns:GetLostAssetAccessoriesDetail">
+    </wsdl:input>
+      <wsdl:output name="GetLostAssetAccessoriesDetailResponse" message="tns:GetLostAssetAccessoriesDetailResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetElec">
+      <wsdl:input name="GetLostAssetElec" message="tns:GetLostAssetElec">
+    </wsdl:input>
+      <wsdl:output name="GetLostAssetElecResponse" message="tns:GetLostAssetElecResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceDetailAssetServiceSoapBinding" type="tns:GetAssetDetail">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetLostAssetGunBrand">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostAssetGunBrand">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostAssetGunBrandResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetElecBrand">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostAssetElecBrand">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostAssetElecBrandResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetGunDetail">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostAssetGunDetail">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostAssetGunDetailResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetElecCharacter">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostAssetElecCharacter">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostAssetElecCharacterResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetUnknowsDetail">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostAssetUnknowsDetail">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostAssetUnknowsDetailResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetAccessories">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostAssetAccessories">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostAssetAccessoriesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetGun">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostAssetGun">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostAssetGunResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetUnknows">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostAssetUnknows">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostAssetUnknowsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetAccessoriesDetail">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostAssetAccessoriesDetail">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostAssetAccessoriesDetailResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetElec">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostAssetElec">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostAssetElecResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceDetailAssetService">
+    <wsdl:port name="WebServiceDetailAssetPort" binding="tns:WebServiceDetailAssetServiceSoapBinding">
+      <soap:address location="http://localhost:8080/webServiceAsset/services/WebServiceDetailAssetPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

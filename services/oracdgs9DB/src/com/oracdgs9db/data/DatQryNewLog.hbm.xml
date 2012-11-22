@@ -1,0 +1,36 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.oracdgs9db.data.DatQryNewLog" table="DAT_QRY_NEW_LOG" schema="POLISMIS" dynamic-insert="false" dynamic-update="false">
+        <id name="qryLogId" type="long">
+            <column name="QRY_LOG_ID" precision="18"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="userId" type="string">
+            <column name="USER_ID" length="6" not-null="true"/>
+        </property>
+        <property name="orgCode" type="string">
+            <column name="ORG_CODE" length="5"/>
+        </property>
+        <property name="qryDate" type="string">
+            <column name="QRY_DATE" length="8" not-null="true"/>
+        </property>
+        <property name="seqNo" type="long">
+            <column name="SEQ_NO" precision="12" not-null="true"/>
+        </property>
+        <property name="condition" type="string">
+            <column name="CONDITION"/>
+        </property>
+        <property name="conGroup" type="string">
+            <column name="CON_GROUP" length="2" not-null="true"/>
+        </property>
+        <property name="conSource" type="string">
+            <column name="CON_SOURCE" length="8" not-null="true"/>
+        </property>
+        <property name="ipAddr" type="string">
+            <column name="IP_ADDR" length="20"/>
+        </property>
+        <property name="updDate" type="timestamp">
+            <column name="UPD_DATE"/>
+        </property>
+    </class>
+</hibernate-mapping>

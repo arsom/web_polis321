@@ -1,0 +1,30 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.oracdgs9db.data.DatGroupC" table="DAT_GROUP_C" schema="POLISMIS" dynamic-insert="false" dynamic-update="false">
+        <id name="groupId" type="big_decimal">
+            <column name="GROUP_ID" precision="22"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="groupCode" type="string">
+            <column name="GROUP_CODE" length="2" not-null="true"/>
+        </property>
+        <property name="groupDesc" type="string">
+            <column name="GROUP_DESC" length="50"/>
+        </property>
+        <property name="groupMom" type="string">
+            <column name="GROUP_MOM" length="2"/>
+        </property>
+        <property name="level" type="string">
+            <column name="LEVEL" length="1" not-null="true"/>
+        </property>
+        <property name="groupImg" type="blob">
+            <column name="GROUP_IMG"/>
+        </property>
+        <property name="groupImgO" type="blob">
+            <column name="GROUP_IMG_O"/>
+        </property>
+        <property name="groupImgS" type="blob">
+            <column name="GROUP_IMG_S"/>
+        </property>
+    </class>
+</hibernate-mapping>

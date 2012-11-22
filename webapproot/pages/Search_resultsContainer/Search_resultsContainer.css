@@ -1,0 +1,90 @@
+body.tundra .Search_resultsContainer .wmlayout .Search_resultsContainer-panel8 {
+	    background-image:url('resources/images/logos/tb8.png');
+}
+
+body.tundra .Search_resultsContainer .wmlayout .Search_resultsContainer-panel12 {
+	    background-color:black;
+}
+
+body.tundra .Search_resultsContainer .wmlayout .Search_resultsContainer-panel9 {
+    background-image:url('resources/images/logos/tb4.png');
+}
+
+body.tundra .Search_resultsContainer .wmlayout .Search_resultsContainer-panel10 {
+	background-image:url('resources/images/logos/tb6.png');
+}
+
+body.tundra .Search_resultsContainer .wmlayout .Search_resultsContainer-panel11 {
+	background-color:#2F2F30;
+}
+
+body.tundra .Search_resultsContainer .wmlayout .Search_resultsContainer-panel7 {
+    background-image:url('resources/images/logos/tb2.png');
+}
+
+body.tundra .Search_resultsContainer .wmlayout .Search_resultsContainer-label1 {
+	color:#F4C701;
+}
+
+body.tundra .Search_resultsContainer .wmlayout .Search_resultsContainer-label2 {
+	font-size:13px;
+}
+
+body.tundra .Search_resultsContainer .wmlayout .Search_resultsContainer-label3 {
+	font-size:13px;
+}
+body.tundra .Search_resultsContainer .wmlayout .Search_resultsContainer-panel46 {
+	
+}
+
+
+body.tundra .Search_resultsContainer .wmlayout .Search_resultsContainer-panel49 {
+	background:url("resources/images/logos/bg_input_show_num_n.png");
+	background-repeat:no-repeat;
+    background-position:top center;
+    background-position-y:-16px;
+}
+
+body.tundra .Search_resultsContainer .wmlayout .Search_resultsContainer-panel50 {
+	background:url("resources/images/logos/bg_input_show_num_n.png");
+	background-repeat:no-repeat;
+    background-position:top center;
+    background-position-y:-16px;
+}
+body.tundra .Search_resultsContainer .wmlayout .Search_resultsContainer-panel48 {
+	background:url("resources/images/logos/bg_input_show_num_n.png");
+	background-repeat:no-repeat;
+    background-position:top center;
+    background-position-y:-16px;
+}
+
+body.tundra .Search_resultsContainer .wmlayout .Search_resultsContainer-panel47 {
+	background:url("resources/images/logos/bg_input_show_num_r.png");
+	background-repeat:no-repeat;
+    background-position:top center;
+    background-position-y:-16px;
+}
+body.tundra .Search_resultsContainer .wmlayout .Search_resultsContainer-pnlNavigaleft {
+	    background-image:url('resources/images/logos/btt_previous.png');
+}
+body.tundra .Search_resultsContainer .wmlayout .Search_resultsContainer-pnlNavigaleft:hover {
+    cursor:pointer;
+    background-image:url('resources/images/logos/btt_previous_r.png');
+}
+body.tundra .Search_resultsContainer .wmlayout .Search_resultsContainer-pnlNavigaRight {
+    background-image:url('resources/images/logos/btt_next.png');
+}
+body.tundra .Search_resultsContainer .wmlayout .Search_resultsContainer-pnlNavigaRight:hover {
+    cursor:pointer;
+    background-image:url('resources/images/logos/btt_next_r.png');
+}body.tundra .Search_resultsContainer .wmlayout .Search_resultsContainer-panel54 {
+	
+}
+
+body.tundra .Search_resultsContainer .wmlayout .Search_resultsContainer-panel53 {
+	background:url("resources/images/logos/bg_input_show_num_r.png");
+	background-repeat:no-repeat;
+background-position:top center;
+background-position-y:15px;
+}
+

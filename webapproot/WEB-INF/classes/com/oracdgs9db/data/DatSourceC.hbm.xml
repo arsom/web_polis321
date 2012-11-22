@@ -1,0 +1,24 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.oracdgs9db.data.DatSourceC" table="DAT_SOURCE_C" schema="POLISMIS" dynamic-insert="false" dynamic-update="false">
+        <id name="sourceId" type="big_decimal">
+            <column name="SOURCE_ID" precision="22"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="sourceCode" type="string">
+            <column name="SOURCE_CODE" length="2" not-null="true"/>
+        </property>
+        <property name="sourceDesc" type="string">
+            <column name="SOURCE_DESC" length="50"/>
+        </property>
+        <property name="sourceImg" type="blob">
+            <column name="SOURCE_IMG"/>
+        </property>
+        <property name="sourceImgA" type="blob">
+            <column name="SOURCE_IMG_A"/>
+        </property>
+        <property name="sourceImgO" type="blob">
+            <column name="SOURCE_IMG_O"/>
+        </property>
+    </class>
+</hibernate-mapping>

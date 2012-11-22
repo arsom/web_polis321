@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" springFile="todb.spring.xml" type="JavaService" CRUDService="false" class="instoLognew" id="todb">
+    <operation name="insertLognew">
+        <parameter isList="false" typeRef="long" name="logid"/>
+        <parameter isList="false" typeRef="java.lang.String" name="userid"/>
+        <parameter isList="false" typeRef="java.lang.String" name="orgcode"/>
+        <parameter isList="false" typeRef="java.lang.String" name="qrydate"/>
+        <parameter isList="false" typeRef="long" name="seqno"/>
+        <parameter isList="false" typeRef="java.lang.String" name="condition"/>
+        <parameter isList="false" typeRef="java.lang.String" name="group"/>
+        <parameter isList="false" typeRef="java.lang.String" name="source"/>
+        <parameter isList="false" typeRef="java.lang.String" name="ip"/>
+    </operation>
+    <dataobjects/>
+</service>

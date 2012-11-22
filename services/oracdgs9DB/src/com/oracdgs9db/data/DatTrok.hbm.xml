@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.oracdgs9db.data.DatTrok" table="DAT_TROK" schema="POLISMIS" dynamic-insert="false" dynamic-update="false">
+        <id name="trokCode" type="string">
+            <column name="TROK_CODE" length="8"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="trokDesc" type="string">
+            <column name="TROK_DESC" length="100"/>
+        </property>
+        <property name="updId" type="string">
+            <column name="UPD_ID" length="13"/>
+        </property>
+        <property name="updDate" type="timestamp">
+            <column name="UPD_DATE"/>
+        </property>
+    </class>
+</hibernate-mapping>

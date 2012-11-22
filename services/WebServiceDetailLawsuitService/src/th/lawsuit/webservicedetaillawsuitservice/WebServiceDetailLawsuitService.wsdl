@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="WebServiceDetailLawsuitService" targetNamespace="http://Lawsuit.th/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://Lawsuit.th/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://Lawsuit.th/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<import namespace="http://Lawsuit.th/" schemaLocation="http://localhost:8080/webServiceLawsuit/services/WebServiceDetailLawsuitPort?xsd=webservicedetaillawsuit_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="SQLException">
+    <wsdl:part name="SQLException" element="tns:SQLException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostCarCrimeResponse">
+    <wsdl:part name="parameters" element="tns:GetLostCarCrimeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeComplainantResponse">
+    <wsdl:part name="parameters" element="tns:GetCrimeComplainantResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetWanHisEducateStatusResponse">
+    <wsdl:part name="parameters" element="tns:GetWanHisEducateStatusResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlanHisNameResponse">
+    <wsdl:part name="parameters" element="tns:GetPlanHisNameResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCarLost">
+    <wsdl:part name="parameters" element="tns:GetCarLost">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetOjHis">
+    <wsdl:part name="parameters" element="tns:GetOjHis">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlanHisOtherName">
+    <wsdl:part name="parameters" element="tns:GetPlanHisOtherName">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetWanHisTraffic">
+    <wsdl:part name="parameters" element="tns:GetWanHisTraffic">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlanHis">
+    <wsdl:part name="parameters" element="tns:GetPlanHis">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrime">
+    <wsdl:part name="parameters" element="tns:GetCrime">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlanHisSpouseResponse">
+    <wsdl:part name="parameters" element="tns:GetPlanHisSpouseResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeComplainant">
+    <wsdl:part name="parameters" element="tns:GetCrimeComplainant">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeOffenderResponse">
+    <wsdl:part name="parameters" element="tns:GetCrimeOffenderResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlanHisName">
+    <wsdl:part name="parameters" element="tns:GetPlanHisName">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetOjHisJudgments">
+    <wsdl:part name="parameters" element="tns:GetOjHisJudgments">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetWanHisDownload">
+    <wsdl:part name="parameters" element="tns:GetWanHisDownload">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetWanHisCrimeResponse">
+    <wsdl:part name="parameters" element="tns:GetWanHisCrimeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetWanHisEducation">
+    <wsdl:part name="parameters" element="tns:GetWanHisEducation">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostManResponse">
+    <wsdl:part name="parameters" element="tns:GetLostManResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetOjHisAcquittedResponse">
+    <wsdl:part name="parameters" element="tns:GetOjHisAcquittedResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetResponse">
+    <wsdl:part name="parameters" element="tns:GetLostAssetResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetOjHisResponse">
+    <wsdl:part name="parameters" element="tns:GetOjHisResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetWanHisProvinceResponse">
+    <wsdl:part name="parameters" element="tns:GetWanHisProvinceResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeOther">
+    <wsdl:part name="parameters" element="tns:GetCrimeOther">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetDetail">
+    <wsdl:part name="parameters" element="tns:GetLostAssetDetail">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlanHisOtherNameResponse">
+    <wsdl:part name="parameters" element="tns:GetPlanHisOtherNameResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetDetailResponse">
+    <wsdl:part name="parameters" element="tns:GetLostAssetDetailResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAsset">
+    <wsdl:part name="parameters" element="tns:GetLostAsset">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetOjHisAcquitted">
+    <wsdl:part name="parameters" element="tns:GetOjHisAcquitted">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetWanHisEducationResponse">
+    <wsdl:part name="parameters" element="tns:GetWanHisEducationResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetWanHisDownloadTrafResponse">
+    <wsdl:part name="parameters" element="tns:GetWanHisDownloadTrafResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeOffender">
+    <wsdl:part name="parameters" element="tns:GetCrimeOffender">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeResponse">
+    <wsdl:part name="parameters" element="tns:GetCrimeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetWanHisProvince">
+    <wsdl:part name="parameters" element="tns:GetWanHisProvince">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlanHisResponse">
+    <wsdl:part name="parameters" element="tns:GetPlanHisResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCarLostColor">
+    <wsdl:part name="parameters" element="tns:GetCarLostColor">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetWanHisProvResponse">
+    <wsdl:part name="parameters" element="tns:GetWanHisProvResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetWanHisEducateStatus">
+    <wsdl:part name="parameters" element="tns:GetWanHisEducateStatus">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetOjHisJudgmentsResponse">
+    <wsdl:part name="parameters" element="tns:GetOjHisJudgmentsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeOtherResponse">
+    <wsdl:part name="parameters" element="tns:GetCrimeOtherResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetWanHisDownloadResponse">
+    <wsdl:part name="parameters" element="tns:GetWanHisDownloadResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetWanHisCrime">
+    <wsdl:part name="parameters" element="tns:GetWanHisCrime">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostCarCrime">
+    <wsdl:part name="parameters" element="tns:GetLostCarCrime">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetWanHisProv">
+    <wsdl:part name="parameters" element="tns:GetWanHisProv">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCarLostResponse">
+    <wsdl:part name="parameters" element="tns:GetCarLostResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetWanHisDownloadTraf">
+    <wsdl:part name="parameters" element="tns:GetWanHisDownloadTraf">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCarLostColorResponse">
+    <wsdl:part name="parameters" element="tns:GetCarLostColorResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetWanHisTrafficResponse">
+    <wsdl:part name="parameters" element="tns:GetWanHisTrafficResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostMan">
+    <wsdl:part name="parameters" element="tns:GetLostMan">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlanHisSpouse">
+    <wsdl:part name="parameters" element="tns:GetPlanHisSpouse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="GetLawsuitDetail">
+    <wsdl:operation name="GetPlanHis">
+      <wsdl:input name="GetPlanHis" message="tns:GetPlanHis">
+    </wsdl:input>
+      <wsdl:output name="GetPlanHisResponse" message="tns:GetPlanHisResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrimeOther">
+      <wsdl:input name="GetCrimeOther" message="tns:GetCrimeOther">
+    </wsdl:input>
+      <wsdl:output name="GetCrimeOtherResponse" message="tns:GetCrimeOtherResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetWanHisProv">
+      <wsdl:input name="GetWanHisProv" message="tns:GetWanHisProv">
+    </wsdl:input>
+      <wsdl:output name="GetWanHisProvResponse" message="tns:GetWanHisProvResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetWanHisDownload">
+      <wsdl:input name="GetWanHisDownload" message="tns:GetWanHisDownload">
+    </wsdl:input>
+      <wsdl:output name="GetWanHisDownloadResponse" message="tns:GetWanHisDownloadResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostMan">
+      <wsdl:input name="GetLostMan" message="tns:GetLostMan">
+    </wsdl:input>
+      <wsdl:output name="GetLostManResponse" message="tns:GetLostManResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetOjHis">
+      <wsdl:input name="GetOjHis" message="tns:GetOjHis">
+    </wsdl:input>
+      <wsdl:output name="GetOjHisResponse" message="tns:GetOjHisResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrimeOffender">
+      <wsdl:input name="GetCrimeOffender" message="tns:GetCrimeOffender">
+    </wsdl:input>
+      <wsdl:output name="GetCrimeOffenderResponse" message="tns:GetCrimeOffenderResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarLost">
+      <wsdl:input name="GetCarLost" message="tns:GetCarLost">
+    </wsdl:input>
+      <wsdl:output name="GetCarLostResponse" message="tns:GetCarLostResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanHisSpouse">
+      <wsdl:input name="GetPlanHisSpouse" message="tns:GetPlanHisSpouse">
+    </wsdl:input>
+      <wsdl:output name="GetPlanHisSpouseResponse" message="tns:GetPlanHisSpouseResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetWanHisTraffic">
+      <wsdl:input name="GetWanHisTraffic" message="tns:GetWanHisTraffic">
+    </wsdl:input>
+      <wsdl:output name="GetWanHisTrafficResponse" message="tns:GetWanHisTrafficResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanHisName">
+      <wsdl:input name="GetPlanHisName" message="tns:GetPlanHisName">
+    </wsdl:input>
+      <wsdl:output name="GetPlanHisNameResponse" message="tns:GetPlanHisNameResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostCarCrime">
+      <wsdl:input name="GetLostCarCrime" message="tns:GetLostCarCrime">
+    </wsdl:input>
+      <wsdl:output name="GetLostCarCrimeResponse" message="tns:GetLostCarCrimeResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrime">
+      <wsdl:input name="GetCrime" message="tns:GetCrime">
+    </wsdl:input>
+      <wsdl:output name="GetCrimeResponse" message="tns:GetCrimeResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetOjHisJudgments">
+      <wsdl:input name="GetOjHisJudgments" message="tns:GetOjHisJudgments">
+    </wsdl:input>
+      <wsdl:output name="GetOjHisJudgmentsResponse" message="tns:GetOjHisJudgmentsResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetWanHisDownloadTraf">
+      <wsdl:input name="GetWanHisDownloadTraf" message="tns:GetWanHisDownloadTraf">
+    </wsdl:input>
+      <wsdl:output name="GetWanHisDownloadTrafResponse" message="tns:GetWanHisDownloadTrafResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetWanHisCrime">
+      <wsdl:input name="GetWanHisCrime" message="tns:GetWanHisCrime">
+    </wsdl:input>
+      <wsdl:output name="GetWanHisCrimeResponse" message="tns:GetWanHisCrimeResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAsset">
+      <wsdl:input name="GetLostAsset" message="tns:GetLostAsset">
+    </wsdl:input>
+      <wsdl:output name="GetLostAssetResponse" message="tns:GetLostAssetResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrimeComplainant">
+      <wsdl:input name="GetCrimeComplainant" message="tns:GetCrimeComplainant">
+    </wsdl:input>
+      <wsdl:output name="GetCrimeComplainantResponse" message="tns:GetCrimeComplainantResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetWanHisProvince">
+      <wsdl:input name="GetWanHisProvince" message="tns:GetWanHisProvince">
+    </wsdl:input>
+      <wsdl:output name="GetWanHisProvinceResponse" message="tns:GetWanHisProvinceResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarLostColor">
+      <wsdl:input name="GetCarLostColor" message="tns:GetCarLostColor">
+    </wsdl:input>
+      <wsdl:output name="GetCarLostColorResponse" message="tns:GetCarLostColorResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetWanHisEducation">
+      <wsdl:input name="GetWanHisEducation" message="tns:GetWanHisEducation">
+    </wsdl:input>
+      <wsdl:output name="GetWanHisEducationResponse" message="tns:GetWanHisEducationResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetOjHisAcquitted">
+      <wsdl:input name="GetOjHisAcquitted" message="tns:GetOjHisAcquitted">
+    </wsdl:input>
+      <wsdl:output name="GetOjHisAcquittedResponse" message="tns:GetOjHisAcquittedResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetDetail">
+      <wsdl:input name="GetLostAssetDetail" message="tns:GetLostAssetDetail">
+    </wsdl:input>
+      <wsdl:output name="GetLostAssetDetailResponse" message="tns:GetLostAssetDetailResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanHisOtherName">
+      <wsdl:input name="GetPlanHisOtherName" message="tns:GetPlanHisOtherName">
+    </wsdl:input>
+      <wsdl:output name="GetPlanHisOtherNameResponse" message="tns:GetPlanHisOtherNameResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetWanHisEducateStatus">
+      <wsdl:input name="GetWanHisEducateStatus" message="tns:GetWanHisEducateStatus">
+    </wsdl:input>
+      <wsdl:output name="GetWanHisEducateStatusResponse" message="tns:GetWanHisEducateStatusResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceDetailLawsuitServiceSoapBinding" type="tns:GetLawsuitDetail">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetPlanHis">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetPlanHis">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetPlanHisResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrimeOther">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetCrimeOther">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetCrimeOtherResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetWanHisProv">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetWanHisProv">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetWanHisProvResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetWanHisDownload">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetWanHisDownload">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetWanHisDownloadResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostMan">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostMan">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostManResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetOjHis">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetOjHis">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetOjHisResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarLost">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetCarLost">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetCarLostResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrimeOffender">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetCrimeOffender">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetCrimeOffenderResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanHisSpouse">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetPlanHisSpouse">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetPlanHisSpouseResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetWanHisTraffic">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetWanHisTraffic">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetWanHisTrafficResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanHisName">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetPlanHisName">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetPlanHisNameResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostCarCrime">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostCarCrime">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostCarCrimeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrime">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetCrime">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetCrimeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetOjHisJudgments">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetOjHisJudgments">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetOjHisJudgmentsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetWanHisDownloadTraf">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetWanHisDownloadTraf">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetWanHisDownloadTrafResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrimeComplainant">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetCrimeComplainant">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetCrimeComplainantResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAsset">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostAsset">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostAssetResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetWanHisCrime">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetWanHisCrime">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetWanHisCrimeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetWanHisProvince">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetWanHisProvince">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetWanHisProvinceResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarLostColor">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetCarLostColor">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetCarLostColorResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetWanHisEducation">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetWanHisEducation">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetWanHisEducationResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetOjHisAcquitted">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetOjHisAcquitted">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetOjHisAcquittedResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetDetail">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostAssetDetail">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostAssetDetailResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanHisOtherName">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetPlanHisOtherName">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetPlanHisOtherNameResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetWanHisEducateStatus">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetWanHisEducateStatus">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetWanHisEducateStatusResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceDetailLawsuitService">
+    <wsdl:port name="WebServiceDetailLawsuitPort" binding="tns:WebServiceDetailLawsuitServiceSoapBinding">
+      <soap:address location="http://localhost:8080/webServiceLawsuit/services/WebServiceDetailLawsuitPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

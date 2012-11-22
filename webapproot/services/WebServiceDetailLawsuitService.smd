@@ -1,0 +1,205 @@
+{
+	"methods": [{
+		"name": "getCarLost",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetCarLost"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetCarLostResponse"
+	}, {
+		"name": "getCarLostColor",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetCarLostColor"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetCarLostColorResponse"
+	}, {
+		"name": "getCrime",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetCrime"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetCrimeResponse"
+	}, {
+		"name": "getCrimeComplainant",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetCrimeComplainant"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetCrimeComplainantResponse"
+	}, {
+		"name": "getCrimeOffender",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetCrimeOffender"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetCrimeOffenderResponse"
+	}, {
+		"name": "getCrimeOther",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetCrimeOther"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetCrimeOtherResponse"
+	}, {
+		"name": "getLostAsset",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetLostAsset"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetLostAssetResponse"
+	}, {
+		"name": "getLostAssetDetail",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetLostAssetDetail"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetLostAssetDetailResponse"
+	}, {
+		"name": "getLostCarCrime",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetLostCarCrime"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetLostCarCrimeResponse"
+	}, {
+		"name": "getLostMan",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetLostMan"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetLostManResponse"
+	}, {
+		"name": "getOjHis",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetOjHis"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetOjHisResponse"
+	}, {
+		"name": "getOjHisAcquitted",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetOjHisAcquitted"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetOjHisAcquittedResponse"
+	}, {
+		"name": "getOjHisJudgments",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetOjHisJudgments"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetOjHisJudgmentsResponse"
+	}, {
+		"name": "getPlanHis",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetPlanHis"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetPlanHisResponse"
+	}, {
+		"name": "getPlanHisName",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetPlanHisName"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetPlanHisNameResponse"
+	}, {
+		"name": "getPlanHisOtherName",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetPlanHisOtherName"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetPlanHisOtherNameResponse"
+	}, {
+		"name": "getPlanHisSpouse",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetPlanHisSpouse"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetPlanHisSpouseResponse"
+	}, {
+		"name": "getWanHisCrime",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetWanHisCrime"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetWanHisCrimeResponse"
+	}, {
+		"name": "getWanHisDownload",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetWanHisDownload"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetWanHisDownloadResponse"
+	}, {
+		"name": "getWanHisDownloadTraf",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetWanHisDownloadTraf"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetWanHisDownloadTrafResponse"
+	}, {
+		"name": "getWanHisEducateStatus",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetWanHisEducateStatus"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetWanHisEducateStatusResponse"
+	}, {
+		"name": "getWanHisEducation",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetWanHisEducation"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetWanHisEducationResponse"
+	}, {
+		"name": "getWanHisProv",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetWanHisProv"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetWanHisProvResponse"
+	}, {
+		"name": "getWanHisProvince",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetWanHisProvince"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetWanHisProvinceResponse"
+	}, {
+		"name": "getWanHisTraffic",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.lawsuit.webservicedetaillawsuitservice.GetWanHisTraffic"
+		}],
+		"returnType": "th.lawsuit.webservicedetaillawsuitservice.GetWanHisTrafficResponse"
+	}],
+	"serviceType": "JSON-RPC",
+	"serviceURL": "WebServiceDetailLawsuitService.json"
+}

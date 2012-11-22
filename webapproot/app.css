@@ -1,0 +1,118 @@
+@import "/wavemaker/lib/wm/base/widget/themes/wm_default/theme.css";
+@font-face {
+    font-family: 'Conv_THSarabun';
+	src: url('resources/fonts/THSarabun.eot');
+	src: local('myfont'), url('resources/fonts/THSarabun.woff') format('woff'), url('resources/fonts/THSarabun.ttf') format('truetype'), url('resources/fonts/THSarabun.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+div[id$=web_polis_header_menu]
+{
+    background-image:url('resources/images/logos/bar_bg.png');
+}
+div[id$=web_polis_footer_footer]
+{
+    background-image:url('resources/images/logos/footer_bg.png');
+    color:#CCCCCC;
+}
+div[id*=pnlImgList]
+{
+    background-image:url('resources/images/logos/shelf_bg.png');
+    background-repeat:repeat-x;
+    background-position:left bottom;
+    overflow:visible !important;
+}
+div[id*=pnlresult]
+{
+    background-color:#FFFFFF;
+}
+div[id*=lblresult]
+{
+    border-style:dashed !important;
+}
+.bar_menu
+{
+    color:whiteSmoke;
+    font-size:24px;
+    font-family:'Conv_THSarabun';
+    font-weight:bold;
+}
+.bar_menu:hover
+{
+    cursor:pointer;
+    background:url("resources/images/logos/bar_over.png") repeat-x;
+}
+.bar_menu:active
+{
+    cursor:pointer;
+    background:url("resources/images/logos/bar_active.png") repeat-x;
+}
+.bar_menu_separt_left
+{
+    background:url('resources/images/logos/bar_separt.png') no-repeat scroll left 0 transparent;
+}
+.bar_menu_separt_right
+{
+    background:url("resources/images/logos/bar_separt.png") no-repeat scroll right 0 transparent
+}
+div[id$=pnlbody] 
+{
+    background-image:url('resources/images/logos/bg_page.png');
+}
+.pnlpic_btt_cancel
+{
+    background:url("resources/images/logos/btt_cancel.png");
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.pnlpic_btt_cancel:hover
+{
+    background:url("resources/images/logos/btt_cancel_r.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    cursor:pointer;
+}
+.pnlpic_btt_search
+{
+    background:url("resources/images/logos/btt_search.png");
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.pnlpic_btt_search:hover
+{
+    background:url("resources/images/logos/btt_search_r.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    cursor:pointer;
+}
+.pnlpic_btt_kadee
+{
+    background:url("resources/images/logos/btt_kadee.png");
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.pnlpic_btt_kadee:hover
+{
+    background:url("resources/images/logos/btt_kadee_r.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    cursor:pointer;
+}
+.pnliconresult{
+    background:url("resources/images/logos/bg_input_show_num_n.png");
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-position:50% -16px;
+}
+.pnlpointertop{
+    background:url("resources/images/logos/bg_input_show_num_r.png");
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-position-y:15px;
+}
+.pnlpointerbottom{
+    background:url("resources/images/logos/bg_input_show_num_r.png");
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-position-y:-16px;
+}

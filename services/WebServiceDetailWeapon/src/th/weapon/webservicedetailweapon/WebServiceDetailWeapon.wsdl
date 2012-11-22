@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="WebServiceDetailWeapon" targetNamespace="http://Weapon.th/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://Weapon.th/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://Weapon.th/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<import namespace="http://Weapon.th/" schemaLocation="http://localhost:8080/webServiceWeapons/services/WebServiceDetailWeaponPort?xsd=webservicedetailweapon_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="GetLostAssetBrand">
+    <wsdl:part name="parameters" element="tns:GetLostAssetBrand">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCrimeGunOwner">
+    <wsdl:part name="parameters" element="tns:getCrimeGunOwner">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlanHis">
+    <wsdl:part name="parameters" element="tns:GetPlanHis">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetResponse">
+    <wsdl:part name="parameters" element="tns:GetLostAssetResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrime">
+    <wsdl:part name="parameters" element="tns:GetCrime">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlanHisHowResponse">
+    <wsdl:part name="parameters" element="tns:GetPlanHisHowResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getCrimeGunOwnerResponse">
+    <wsdl:part name="parameters" element="tns:getCrimeGunOwnerResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeGunResponse">
+    <wsdl:part name="parameters" element="tns:GetCrimeGunResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetMakerResponse">
+    <wsdl:part name="parameters" element="tns:GetLostAssetMakerResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAsset2">
+    <wsdl:part name="parameters" element="tns:GetLostAsset2">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeGun">
+    <wsdl:part name="parameters" element="tns:GetCrimeGun">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeResponse">
+    <wsdl:part name="parameters" element="tns:GetCrimeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPersonResponse">
+    <wsdl:part name="parameters" element="tns:GetPersonResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlanHisResponse">
+    <wsdl:part name="parameters" element="tns:GetPlanHisResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SQLException">
+    <wsdl:part name="SQLException" element="tns:SQLException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAsset2Response">
+    <wsdl:part name="parameters" element="tns:GetLostAsset2Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPerson">
+    <wsdl:part name="parameters" element="tns:GetPerson">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetMaker">
+    <wsdl:part name="parameters" element="tns:GetLostAssetMaker">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetBrandResponse">
+    <wsdl:part name="parameters" element="tns:GetLostAssetBrandResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAsset">
+    <wsdl:part name="parameters" element="tns:GetLostAsset">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlanHisHow">
+    <wsdl:part name="parameters" element="tns:GetPlanHisHow">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeOwnerResponse">
+    <wsdl:part name="parameters" element="tns:GetCrimeOwnerResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeOwner">
+    <wsdl:part name="parameters" element="tns:GetCrimeOwner">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="WebServiceDetailWeaponPortType">
+    <wsdl:operation name="getCrimeGunOwner">
+      <wsdl:input name="getCrimeGunOwner" message="tns:getCrimeGunOwner">
+    </wsdl:input>
+      <wsdl:output name="getCrimeGunOwnerResponse" message="tns:getCrimeGunOwnerResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrimeGun">
+      <wsdl:input name="GetCrimeGun" message="tns:GetCrimeGun">
+    </wsdl:input>
+      <wsdl:output name="GetCrimeGunResponse" message="tns:GetCrimeGunResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAsset">
+      <wsdl:input name="GetLostAsset" message="tns:GetLostAsset">
+    </wsdl:input>
+      <wsdl:output name="GetLostAssetResponse" message="tns:GetLostAssetResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrime">
+      <wsdl:input name="GetCrime" message="tns:GetCrime">
+    </wsdl:input>
+      <wsdl:output name="GetCrimeResponse" message="tns:GetCrimeResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrimeOwner">
+      <wsdl:input name="GetCrimeOwner" message="tns:GetCrimeOwner">
+    </wsdl:input>
+      <wsdl:output name="GetCrimeOwnerResponse" message="tns:GetCrimeOwnerResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPerson">
+      <wsdl:input name="GetPerson" message="tns:GetPerson">
+    </wsdl:input>
+      <wsdl:output name="GetPersonResponse" message="tns:GetPersonResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAsset2">
+      <wsdl:input name="GetLostAsset2" message="tns:GetLostAsset2">
+    </wsdl:input>
+      <wsdl:output name="GetLostAsset2Response" message="tns:GetLostAsset2Response">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetMaker">
+      <wsdl:input name="GetLostAssetMaker" message="tns:GetLostAssetMaker">
+    </wsdl:input>
+      <wsdl:output name="GetLostAssetMakerResponse" message="tns:GetLostAssetMakerResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanHisHow">
+      <wsdl:input name="GetPlanHisHow" message="tns:GetPlanHisHow">
+    </wsdl:input>
+      <wsdl:output name="GetPlanHisHowResponse" message="tns:GetPlanHisHowResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanHis">
+      <wsdl:input name="GetPlanHis" message="tns:GetPlanHis">
+    </wsdl:input>
+      <wsdl:output name="GetPlanHisResponse" message="tns:GetPlanHisResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetBrand">
+      <wsdl:input name="GetLostAssetBrand" message="tns:GetLostAssetBrand">
+    </wsdl:input>
+      <wsdl:output name="GetLostAssetBrandResponse" message="tns:GetLostAssetBrandResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceDetailWeaponSoapBinding" type="tns:WebServiceDetailWeaponPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getCrimeGunOwner">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getCrimeGunOwner">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getCrimeGunOwnerResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrimeGun">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetCrimeGun">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetCrimeGunResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAsset">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostAsset">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostAssetResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrime">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetCrime">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetCrimeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrimeOwner">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetCrimeOwner">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetCrimeOwnerResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPerson">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetPerson">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetPersonResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAsset2">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostAsset2">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostAsset2Response">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetMaker">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostAssetMaker">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostAssetMakerResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanHisHow">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetPlanHisHow">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetPlanHisHowResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanHis">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetPlanHis">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetPlanHisResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetBrand">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostAssetBrand">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostAssetBrandResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceDetailWeapon">
+    <wsdl:port name="WebServiceDetailWeaponPort" binding="tns:WebServiceDetailWeaponSoapBinding">
+      <soap:address location="http://localhost:8080/webServiceWeapons/services/WebServiceDetailWeaponPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

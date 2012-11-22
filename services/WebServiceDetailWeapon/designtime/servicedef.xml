@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" springFile="WebServiceDetailWeapon.spring.xml" type="WebService" CRUDService="false" class="th.weapon.webservicedetailweapon.WebServiceDetailWeapon" id="WebServiceDetailWeapon">
+    <operation name="getCrime">
+        <parameter isList="false" typeRef="th.weapon.webservicedetailweapon.GetCrime" name="parameters"/>
+        <return isList="false" typeRef="th.weapon.webservicedetailweapon.GetCrimeResponse"/>
+    </operation>
+    <operation name="getCrimeGun">
+        <parameter isList="false" typeRef="th.weapon.webservicedetailweapon.GetCrimeGun" name="parameters"/>
+        <return isList="false" typeRef="th.weapon.webservicedetailweapon.GetCrimeGunResponse"/>
+    </operation>
+    <operation name="getCrimeGunOwner">
+        <parameter isList="false" typeRef="th.weapon.webservicedetailweapon.GetCrimeGunOwner" name="parameters"/>
+        <return isList="false" typeRef="th.weapon.webservicedetailweapon.GetCrimeGunOwnerResponse"/>
+    </operation>
+    <operation name="getCrimeOwner">
+        <parameter isList="false" typeRef="th.weapon.webservicedetailweapon.GetCrimeOwner" name="parameters"/>
+        <return isList="false" typeRef="th.weapon.webservicedetailweapon.GetCrimeOwnerResponse"/>
+    </operation>
+    <operation name="getLostAsset">
+        <parameter isList="false" typeRef="th.weapon.webservicedetailweapon.GetLostAsset" name="parameters"/>
+        <return isList="false" typeRef="th.weapon.webservicedetailweapon.GetLostAssetResponse"/>
+    </operation>
+    <operation name="getLostAsset2">
+        <parameter isList="false" typeRef="th.weapon.webservicedetailweapon.GetLostAsset2" name="parameters"/>
+        <return isList="false" typeRef="th.weapon.webservicedetailweapon.GetLostAsset2Response"/>
+    </operation>
+    <operation name="getLostAssetBrand">
+        <parameter isList="false" typeRef="th.weapon.webservicedetailweapon.GetLostAssetBrand" name="parameters"/>
+        <return isList="false" typeRef="th.weapon.webservicedetailweapon.GetLostAssetBrandResponse"/>
+    </operation>
+    <operation name="getLostAssetMaker">
+        <parameter isList="false" typeRef="th.weapon.webservicedetailweapon.GetLostAssetMaker" name="parameters"/>
+        <return isList="false" typeRef="th.weapon.webservicedetailweapon.GetLostAssetMakerResponse"/>
+    </operation>
+    <operation name="getPerson">
+        <parameter isList="false" typeRef="th.weapon.webservicedetailweapon.GetPerson" name="parameters"/>
+        <return isList="false" typeRef="th.weapon.webservicedetailweapon.GetPersonResponse"/>
+    </operation>
+    <operation name="getPlanHis">
+        <parameter isList="false" typeRef="th.weapon.webservicedetailweapon.GetPlanHis" name="parameters"/>
+        <return isList="false" typeRef="th.weapon.webservicedetailweapon.GetPlanHisResponse"/>
+    </operation>
+    <operation name="getPlanHisHow">
+        <parameter isList="false" typeRef="th.weapon.webservicedetailweapon.GetPlanHisHow" name="parameters"/>
+        <return isList="false" typeRef="th.weapon.webservicedetailweapon.GetPlanHisHowResponse"/>
+    </operation>
+    <dataobjects>
+        <dataobject supportsQuickData="false" name="GetCrimeGunResponse" javaType="th.weapon.webservicedetailweapon.GetCrimeGunResponse">
+            <element allowNull="false" isList="true" typeRef="th.weapon.webservicedetailweapon.SetCrimeGunType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetCrimeGunType" javaType="th.weapon.webservicedetailweapon.SetCrimeGunType">
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="amount"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="brand"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="charge"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cmajorCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="commonFlag"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="commonMistaked"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="commonUsed"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="commonWrong"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="complainDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="complainTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="crimeNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="crimeYear"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="damageFlag"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="licence"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurCwCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurFromDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurFromTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurPlace"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurToDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurToTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ownCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ownStatus"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="polisName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="sizeWeapon"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponSEQ"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponStatus"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponType"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPlanHisHowResponse" javaType="th.weapon.webservicedetailweapon.GetPlanHisHowResponse">
+            <element allowNull="false" isList="true" typeRef="th.weapon.webservicedetailweapon.SetPlanHisHowType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetPlanHisHowType" javaType="th.weapon.webservicedetailweapon.SetPlanHisHowType">
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="method1Name"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="method2Name"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="method3Name"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicle1Name"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicle2Name"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicle3Name"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weapon1Name"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weapon2Name"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weapon3Name"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCrimeGunOwnerResponse" javaType="th.weapon.webservicedetailweapon.GetCrimeGunOwnerResponse">
+            <element allowNull="false" isList="true" typeRef="th.weapon.webservicedetailweapon.SetGunOwnerType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetGunOwnerType" javaType="th.weapon.webservicedetailweapon.SetGunOwnerType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="idNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="name"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostAssetResponse" javaType="th.weapon.webservicedetailweapon.GetLostAssetResponse">
+            <element allowNull="false" isList="true" typeRef="th.weapon.webservicedetailweapon.SetAssetLostType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetAssetLostType" javaType="th.weapon.webservicedetailweapon.SetAssetLostType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astId"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseOff"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="charge"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenAmp"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenArea"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nameL"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nameT"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="police"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="position"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="recvDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="recvTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="untilDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="untilTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="LAddress"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="LComp"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="LProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="LProvName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="TAddress"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="TComp"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="TProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="TProvName"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCrime" javaType="th.weapon.webservicedetailweapon.GetCrime">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponGroup"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="crimeNO"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="crimeYear"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponSEQ"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPlanHis" javaType="th.weapon.webservicedetailweapon.GetPlanHis">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseNO"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseOff"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cplanNo"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCrimeGunOwner" javaType="th.weapon.webservicedetailweapon.GetCrimeGunOwner">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="crimeNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="crimeYear"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="complainerNO"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostAssetBrand" javaType="th.weapon.webservicedetailweapon.GetLostAssetBrand">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="typeCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="typeGroup"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="brandCode"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCrimeOwner" javaType="th.weapon.webservicedetailweapon.GetCrimeOwner">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="crimeNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="crimeYear"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="offenderNO"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCrimeOwnerResponse" javaType="th.weapon.webservicedetailweapon.GetCrimeOwnerResponse">
+            <element allowNull="false" isList="true" typeRef="th.weapon.webservicedetailweapon.SetCrimeOwnerType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetCrimeOwnerType" javaType="th.weapon.webservicedetailweapon.SetCrimeOwnerType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="name"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPlanHisHow" javaType="th.weapon.webservicedetailweapon.GetPlanHisHow">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseOff"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cplanNo"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostAsset" javaType="th.weapon.webservicedetailweapon.GetLostAsset">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseOff"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astId"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostAssetBrandResponse" javaType="th.weapon.webservicedetailweapon.GetLostAssetBrandResponse">
+            <element allowNull="false" isList="true" typeRef="th.weapon.webservicedetailweapon.SetAssetBrandType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetAssetBrandType" javaType="th.weapon.webservicedetailweapon.SetAssetBrandType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="name"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SQLException" javaType="th.weapon.webservicedetailweapon.SQLException"/>
+        <dataobject supportsQuickData="false" name="GetPlanHisResponse" javaType="th.weapon.webservicedetailweapon.GetPlanHisResponse">
+            <element allowNull="false" isList="true" typeRef="th.weapon.webservicedetailweapon.SetPlanHisDetailType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetPlanHisDetailType" javaType="th.weapon.webservicedetailweapon.SetPlanHisDetailType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="area1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="area1Name"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="area2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="area2Name"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="area3"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="area3Name"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="brandName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseOff"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseOffName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="charge"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="color"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenAddr"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenAmpur"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenD"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenT"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="method1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="method2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="method3"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="proStole1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="proStole2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="proStole3"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="stole1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="stole2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="stole3"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="untilD"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="untilT"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="value"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicle1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicle2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicle3"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicleBrand"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicleColor"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicleNo1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicleNo2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicleProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicleProvName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="victimName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weapon1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weapon2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weapon3"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostAssetMaker" javaType="th.weapon.webservicedetailweapon.GetLostAssetMaker">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cctMakerCode"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPerson" javaType="th.weapon.webservicedetailweapon.GetPerson">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="perCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="serialNo"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostAsset2Response" javaType="th.weapon.webservicedetailweapon.GetLostAsset2Response">
+            <element allowNull="false" isList="true" typeRef="th.weapon.webservicedetailweapon.SetAssetLost2Type" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetAssetLost2Type" javaType="th.weapon.webservicedetailweapon.SetAssetLost2Type">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astAmt"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astBrand"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astGroup"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astType"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cctMakerCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="gunNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="stypeName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="typeName"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostAsset2" javaType="th.weapon.webservicedetailweapon.GetLostAsset2">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseOff"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astId"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostAssetMakerResponse" javaType="th.weapon.webservicedetailweapon.GetLostAssetMakerResponse">
+            <element allowNull="false" isList="true" typeRef="th.weapon.webservicedetailweapon.SetAssetMakerType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetAssetMakerType" javaType="th.weapon.webservicedetailweapon.SetAssetMakerType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="name"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPersonResponse" javaType="th.weapon.webservicedetailweapon.GetPersonResponse">
+            <element allowNull="false" isList="true" typeRef="th.weapon.webservicedetailweapon.SetWeaponDetailType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetWeaponDetailType" javaType="th.weapon.webservicedetailweapon.SetWeaponDetailType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="dsc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="perCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="regId"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="serialNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="updtDte"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="updtId"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponChar"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponColor"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponColorDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponGroup"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponGroupDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponKind"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponKindDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponMax"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponModel"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponModelDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="weaponPrice"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponSize"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponSizeDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponStatus"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponType"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponType2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponTypeDesc"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCrimeGun" javaType="th.weapon.webservicedetailweapon.GetCrimeGun">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="crimeNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="crimeYear"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCrimeResponse" javaType="th.weapon.webservicedetailweapon.GetCrimeResponse">
+            <element allowNull="false" isList="true" typeRef="th.weapon.webservicedetailweapon.SetCrimeWeaponDetType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetCrimeWeaponDetType" javaType="th.weapon.webservicedetailweapon.SetCrimeWeaponDetType">
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="amount"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="brand"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="characterSpecial"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="commonDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="commonDoc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="commonDocDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="commonFlag"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="commonMistaked"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="commonPjv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="commonReturn"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="commonTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="commonUsed"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="commonWrong"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="crimeNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="crimeYear"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="damageFlag"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="licence"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ownCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ownStatus"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="price"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="returnDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="returnMethod"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="returnPlace"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="sizeCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="sizeWeapon"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="type"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="updDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="updId"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponGroup"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponGroupDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponSEQ"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponStatus"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponType"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="weaponTypeDesc"/>
+        </dataobject>
+    </dataobjects>
+</service>

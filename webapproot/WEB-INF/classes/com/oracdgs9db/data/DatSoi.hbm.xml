@@ -1,0 +1,21 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.oracdgs9db.data.DatSoi" table="DAT_SOI" schema="POLISMIS" dynamic-insert="false" dynamic-update="false">
+        <id name="soiCode" type="string">
+            <column name="SOI_CODE" length="8"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="soiDesc1" type="string">
+            <column name="SOI_DESC1" length="100"/>
+        </property>
+        <property name="soiDesc2" type="string">
+            <column name="SOI_DESC2" length="100"/>
+        </property>
+        <property name="updId" type="string">
+            <column name="UPD_ID" length="13"/>
+        </property>
+        <property name="updDate" type="timestamp">
+            <column name="UPD_DATE"/>
+        </property>
+    </class>
+</hibernate-mapping>

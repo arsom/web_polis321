@@ -1,0 +1,55 @@
+body.tundra .Search_p .wmlayout .Search_p-panel12 {
+	background-color:black;
+}
+
+body.tundra .Search_p .wmlayout .Search_p-panel9 {
+	background-image:url('resources/images/logos/tb4.png');
+}
+
+body.tundra .Search_p .wmlayout .Search_p-panel10 {
+	background-image:url('resources/images/logos/tb6.png');
+}
+
+body.tundra .Search_p .wmlayout .Search_p-panel11 {
+	background-color:#2F2F30;
+}
+
+body.tundra .Search_p .wmlayout .Search_p-panel7 {
+    background-image:url('resources/images/logos/tb2.png');
+}
+
+body.tundra .Search_p .wmlayout .Search_p-label1 {
+	color:#F4C701;
+}
+
+body.tundra .Search_p .wmlayout .Search_p-label2 {
+	font-size:13px;
+}
+
+body.tundra .Search_p .wmlayout .Search_p-label3 {
+	font-size:13px;
+}
+body.tundra .Search_p .wmlayout .Search_p-panel46 {
+	
+}
+body.tundra .Search_p .wmlayout .Search_p-panel49 {
+	background:url("resources/images/logos/bg_input_show_num_n.png");
+	background-repeat:no-repeat;
+    background-position:top center;
+    background-position-y:-16px;
+}
+
+body.tundra .Search_p .wmlayout .Search_p-panel50 {
+	background:url("resources/images/logos/bg_input_show_num_n.png");
+	background-repeat:no-repeat;
+    background-position:top center;
+    background-position-y:-16px;
+}
+body.tundra .Search_p .wmlayout .Search_p-panel48 {
+	
+}
+
+body.tundra .Search_p .wmlayout .Search_p-panel47 {
+	
+}
+

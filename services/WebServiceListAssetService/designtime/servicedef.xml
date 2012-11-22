@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" springFile="WebServiceListAssetService.spring.xml" type="WebService" CRUDService="false" class="th.asset.webservicelistassetservice.WebServiceListAssetService" id="WebServiceListAssetService">
+    <operation name="getLostAsseetListAccessories">
+        <parameter isList="false" typeRef="th.asset.webservicelistassetservice.GetLostAsseetListAccessories" name="parameters"/>
+        <return isList="false" typeRef="th.asset.webservicelistassetservice.GetLostAsseetListAccessoriesResponse"/>
+    </operation>
+    <operation name="getLostAssetListElec">
+        <parameter isList="false" typeRef="th.asset.webservicelistassetservice.GetLostAssetListElec" name="parameters"/>
+        <return isList="false" typeRef="th.asset.webservicelistassetservice.GetLostAssetListElecResponse"/>
+    </operation>
+    <operation name="getLostAssetListGun">
+        <parameter isList="false" typeRef="th.asset.webservicelistassetservice.GetLostAssetListGun" name="parameters"/>
+        <return isList="false" typeRef="th.asset.webservicelistassetservice.GetLostAssetListGunResponse"/>
+    </operation>
+    <operation name="getLostAssetListUnknowPrice">
+        <parameter isList="false" typeRef="th.asset.webservicelistassetservice.GetLostAssetListUnknowPrice" name="parameters"/>
+        <return isList="false" typeRef="th.asset.webservicelistassetservice.GetLostAssetListUnknowPriceResponse"/>
+    </operation>
+    <operation name="getSelectPage">
+        <parameter isList="false" typeRef="th.asset.webservicelistassetservice.GetSelectPage" name="parameters"/>
+        <return isList="false" typeRef="th.asset.webservicelistassetservice.GetSelectPageResponse"/>
+    </operation>
+    <dataobjects>
+        <dataobject supportsQuickData="false" name="GetLostAssetListUnknowPriceResponse" javaType="th.asset.webservicelistassetservice.GetLostAssetListUnknowPriceResponse">
+            <element allowNull="false" isList="true" typeRef="th.asset.webservicelistassetservice.SetLostUnknowsType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetLostUnknowsType" javaType="th.asset.webservicelistassetservice.SetLostUnknowsType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astGroup"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astId"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="astSEQ"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astStype"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astType"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseOff"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="org"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="police"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="recvDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="stypeName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="typeName"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetSelectPage" javaType="th.asset.webservicelistassetservice.GetSelectPage"/>
+        <dataobject supportsQuickData="false" name="GetLostAsseetListAccessories" javaType="th.asset.webservicelistassetservice.GetLostAsseetListAccessories">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg4"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg5"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg6"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg7"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg8"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostAssetListElecResponse" javaType="th.asset.webservicelistassetservice.GetLostAssetListElecResponse">
+            <element allowNull="false" isList="true" typeRef="th.asset.webservicelistassetservice.SetLostElecType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetLostElecType" javaType="th.asset.webservicelistassetservice.SetLostElecType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astGroup"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astId"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="astSEQ"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astStype"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astType"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseOff"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="org"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="police"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="recvDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="stypeName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="typeName"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SQLException" javaType="th.asset.webservicelistassetservice.SQLException"/>
+        <dataobject supportsQuickData="false" name="GetLostAssetListGun" javaType="th.asset.webservicelistassetservice.GetLostAssetListGun">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg4"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg5"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg6"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg7"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg8"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg9"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg10"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetSelectPageResponse" javaType="th.asset.webservicelistassetservice.GetSelectPageResponse">
+            <element allowNull="false" isList="true" typeRef="th.asset.webservicelistassetservice.SetSelectType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetSelectType" javaType="th.asset.webservicelistassetservice.SetSelectType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="typeCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="typeGroup"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="typeName"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostAssetListUnknowPrice" javaType="th.asset.webservicelistassetservice.GetLostAssetListUnknowPrice">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg4"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostAssetListGunResponse" javaType="th.asset.webservicelistassetservice.GetLostAssetListGunResponse">
+            <element allowNull="false" isList="true" typeRef="th.asset.webservicelistassetservice.SetLostGunAType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetLostGunAType" javaType="th.asset.webservicelistassetservice.SetLostGunAType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astGroup"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astId"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="astSEQ"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astStype"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astType"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseOff"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="org"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="police"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="recvDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="stypeName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="typeName"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostAssetListElec" javaType="th.asset.webservicelistassetservice.GetLostAssetListElec">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg4"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg5"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg6"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg7"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg8"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg9"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostAsseetListAccessoriesResponse" javaType="th.asset.webservicelistassetservice.GetLostAsseetListAccessoriesResponse">
+            <element allowNull="false" isList="true" typeRef="th.asset.webservicelistassetservice.SetLostAccessoriesType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetLostAccessoriesType" javaType="th.asset.webservicelistassetservice.SetLostAccessoriesType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astGroup"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astId"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="astSEQ"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astStype"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astType"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseOff"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="org"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="police"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="recvDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="stypeName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="typeName"/>
+        </dataobject>
+    </dataobjects>
+</service>

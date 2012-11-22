@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="WebServiceDetailVehicleService" targetNamespace="http://vehicles.th/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://vehicles.th/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://vehicles.th/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<import namespace="http://vehicles.th/" schemaLocation="http://localhost:8080/webServiceVehicles/services/WebServiceDetailVehiclePort?xsd=webservicedetailvehicle_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="GetLostCarResponse">
+    <wsdl:part name="parameters" element="tns:GetLostCarResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostCar">
+    <wsdl:part name="parameters" element="tns:GetLostCar">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostCarColor">
+    <wsdl:part name="parameters" element="tns:GetLostCarColor">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostCarPenaltyResponse">
+    <wsdl:part name="parameters" element="tns:GetLostCarPenaltyResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetAccidentCarResponse">
+    <wsdl:part name="parameters" element="tns:GetAccidentCarResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetTrcByKeyResponse">
+    <wsdl:part name="parameters" element="tns:GetTrcByKeyResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetAccidentCar">
+    <wsdl:part name="parameters" element="tns:GetAccidentCar">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCarByKeyColorResponse">
+    <wsdl:part name="parameters" element="tns:GetCarByKeyColorResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPersonCRIMEResponse">
+    <wsdl:part name="parameters" element="tns:GetPersonCRIMEResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeEXT">
+    <wsdl:part name="parameters" element="tns:GetCrimeEXT">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPersonVEHICLE">
+    <wsdl:part name="parameters" element="tns:GetPersonVEHICLE">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetInterceptResponse">
+    <wsdl:part name="parameters" element="tns:GetInterceptResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetTrcByKeyColorResponse">
+    <wsdl:part name="parameters" element="tns:GetTrcByKeyColorResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetTicketMBV">
+    <wsdl:part name="parameters" element="tns:GetTicketMBV">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetAccNationResponse">
+    <wsdl:part name="parameters" element="tns:GetAccNationResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetIntercept">
+    <wsdl:part name="parameters" element="tns:GetIntercept">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetTrcByKeyColor">
+    <wsdl:part name="parameters" element="tns:GetTrcByKeyColor">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostCarPenalty">
+    <wsdl:part name="parameters" element="tns:GetLostCarPenalty">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCarByKeyColor">
+    <wsdl:part name="parameters" element="tns:GetCarByKeyColor">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPerson">
+    <wsdl:part name="parameters" element="tns:GetPerson">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCarByKeyResponse">
+    <wsdl:part name="parameters" element="tns:GetCarByKeyResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeResponse">
+    <wsdl:part name="parameters" element="tns:GetCrimeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeEXTResponse">
+    <wsdl:part name="parameters" element="tns:GetCrimeEXTResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostCarColorResponse">
+    <wsdl:part name="parameters" element="tns:GetLostCarColorResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPersonVEHICLEResponse">
+    <wsdl:part name="parameters" element="tns:GetPersonVEHICLEResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetConfiscate">
+    <wsdl:part name="parameters" element="tns:GetConfiscate">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrime">
+    <wsdl:part name="parameters" element="tns:GetCrime">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPersonCRIME">
+    <wsdl:part name="parameters" element="tns:GetPersonCRIME">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetTickets">
+    <wsdl:part name="parameters" element="tns:GetTickets">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetConfiscateResponse">
+    <wsdl:part name="parameters" element="tns:GetConfiscateResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetAccNation">
+    <wsdl:part name="parameters" element="tns:GetAccNation">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SQLException">
+    <wsdl:part name="SQLException" element="tns:SQLException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCarByKey">
+    <wsdl:part name="parameters" element="tns:GetCarByKey">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetTicketsResponse">
+    <wsdl:part name="parameters" element="tns:GetTicketsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetTicketMBVResponse">
+    <wsdl:part name="parameters" element="tns:GetTicketMBVResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetTrcByKey">
+    <wsdl:part name="parameters" element="tns:GetTrcByKey">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPersonResponse">
+    <wsdl:part name="parameters" element="tns:GetPersonResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="GetVehicleDetail">
+    <wsdl:operation name="GetCrimeEXT">
+      <wsdl:input name="GetCrimeEXT" message="tns:GetCrimeEXT">
+    </wsdl:input>
+      <wsdl:output name="GetCrimeEXTResponse" message="tns:GetCrimeEXTResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarByKey">
+      <wsdl:input name="GetCarByKey" message="tns:GetCarByKey">
+    </wsdl:input>
+      <wsdl:output name="GetCarByKeyResponse" message="tns:GetCarByKeyResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostCar">
+      <wsdl:input name="GetLostCar" message="tns:GetLostCar">
+    </wsdl:input>
+      <wsdl:output name="GetLostCarResponse" message="tns:GetLostCarResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccNation">
+      <wsdl:input name="GetAccNation" message="tns:GetAccNation">
+    </wsdl:input>
+      <wsdl:output name="GetAccNationResponse" message="tns:GetAccNationResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccidentCar">
+      <wsdl:input name="GetAccidentCar" message="tns:GetAccidentCar">
+    </wsdl:input>
+      <wsdl:output name="GetAccidentCarResponse" message="tns:GetAccidentCarResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrcByKeyColor">
+      <wsdl:input name="GetTrcByKeyColor" message="tns:GetTrcByKeyColor">
+    </wsdl:input>
+      <wsdl:output name="GetTrcByKeyColorResponse" message="tns:GetTrcByKeyColorResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostCarPenalty">
+      <wsdl:input name="GetLostCarPenalty" message="tns:GetLostCarPenalty">
+    </wsdl:input>
+      <wsdl:output name="GetLostCarPenaltyResponse" message="tns:GetLostCarPenaltyResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetTickets">
+      <wsdl:input name="GetTickets" message="tns:GetTickets">
+    </wsdl:input>
+      <wsdl:output name="GetTicketsResponse" message="tns:GetTicketsResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonCRIME">
+      <wsdl:input name="GetPersonCRIME" message="tns:GetPersonCRIME">
+    </wsdl:input>
+      <wsdl:output name="GetPersonCRIMEResponse" message="tns:GetPersonCRIMEResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPerson">
+      <wsdl:input name="GetPerson" message="tns:GetPerson">
+    </wsdl:input>
+      <wsdl:output name="GetPersonResponse" message="tns:GetPersonResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetIntercept">
+      <wsdl:input name="GetIntercept" message="tns:GetIntercept">
+    </wsdl:input>
+      <wsdl:output name="GetInterceptResponse" message="tns:GetInterceptResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrcByKey">
+      <wsdl:input name="GetTrcByKey" message="tns:GetTrcByKey">
+    </wsdl:input>
+      <wsdl:output name="GetTrcByKeyResponse" message="tns:GetTrcByKeyResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrime">
+      <wsdl:input name="GetCrime" message="tns:GetCrime">
+    </wsdl:input>
+      <wsdl:output name="GetCrimeResponse" message="tns:GetCrimeResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetConfiscate">
+      <wsdl:input name="GetConfiscate" message="tns:GetConfiscate">
+    </wsdl:input>
+      <wsdl:output name="GetConfiscateResponse" message="tns:GetConfiscateResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarByKeyColor">
+      <wsdl:input name="GetCarByKeyColor" message="tns:GetCarByKeyColor">
+    </wsdl:input>
+      <wsdl:output name="GetCarByKeyColorResponse" message="tns:GetCarByKeyColorResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketMBV">
+      <wsdl:input name="GetTicketMBV" message="tns:GetTicketMBV">
+    </wsdl:input>
+      <wsdl:output name="GetTicketMBVResponse" message="tns:GetTicketMBVResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonVEHICLE">
+      <wsdl:input name="GetPersonVEHICLE" message="tns:GetPersonVEHICLE">
+    </wsdl:input>
+      <wsdl:output name="GetPersonVEHICLEResponse" message="tns:GetPersonVEHICLEResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostCarColor">
+      <wsdl:input name="GetLostCarColor" message="tns:GetLostCarColor">
+    </wsdl:input>
+      <wsdl:output name="GetLostCarColorResponse" message="tns:GetLostCarColorResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceDetailVehicleServiceSoapBinding" type="tns:GetVehicleDetail">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetCarByKey">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetCarByKey">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetCarByKeyResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrimeEXT">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetCrimeEXT">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetCrimeEXTResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccNation">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetAccNation">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetAccNationResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostCar">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostCar">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostCarResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccidentCar">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetAccidentCar">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetAccidentCarResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostCarPenalty">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostCarPenalty">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostCarPenaltyResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrcByKeyColor">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetTrcByKeyColor">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetTrcByKeyColorResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetTickets">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetTickets">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetTicketsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonCRIME">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetPersonCRIME">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetPersonCRIMEResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPerson">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetPerson">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetPersonResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetIntercept">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetIntercept">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetInterceptResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrime">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetCrime">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetCrimeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrcByKey">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetTrcByKey">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetTrcByKeyResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCarByKeyColor">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetCarByKeyColor">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetCarByKeyColorResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetConfiscate">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetConfiscate">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetConfiscateResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketMBV">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetTicketMBV">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetTicketMBVResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonVEHICLE">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetPersonVEHICLE">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetPersonVEHICLEResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostCarColor">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostCarColor">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostCarColorResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceDetailVehicleService">
+    <wsdl:port name="WebServiceDetailVehiclePort" binding="tns:WebServiceDetailVehicleServiceSoapBinding">
+      <soap:address location="http://localhost:8080/webServiceVehicles/services/WebServiceDetailVehiclePort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

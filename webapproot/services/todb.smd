@@ -1,0 +1,37 @@
+{
+	"methods": [{
+		"name": "insertLognew",
+		"operationType": null,
+		"parameters": [{
+			"name": "logid",
+			"type": "long"
+		}, {
+			"name": "userid",
+			"type": "java.lang.String"
+		}, {
+			"name": "orgcode",
+			"type": "java.lang.String"
+		}, {
+			"name": "qrydate",
+			"type": "java.lang.String"
+		}, {
+			"name": "seqno",
+			"type": "long"
+		}, {
+			"name": "condition",
+			"type": "java.lang.String"
+		}, {
+			"name": "group",
+			"type": "java.lang.String"
+		}, {
+			"name": "source",
+			"type": "java.lang.String"
+		}, {
+			"name": "ip",
+			"type": "java.lang.String"
+		}],
+		"returnType": null
+	}],
+	"serviceType": "JSON-RPC",
+	"serviceURL": "todb.json"
+}

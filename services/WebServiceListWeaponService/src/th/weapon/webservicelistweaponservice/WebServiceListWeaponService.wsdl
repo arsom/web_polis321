@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="WebServiceListWeaponService" targetNamespace="http://Weapon.th/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://Weapon.th/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://Weapon.th/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<import namespace="http://Weapon.th/" schemaLocation="http://localhost:8080/webServiceWeapons/services/WebServiceListWeaponPort?xsd=webservicelistweapon_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="GetLostAssetListResponse">
+    <wsdl:part name="parameters" element="tns:GetLostAssetListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeList2">
+    <wsdl:part name="parameters" element="tns:GetCrimeList2">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeList2Response">
+    <wsdl:part name="parameters" element="tns:GetCrimeList2Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeListGun">
+    <wsdl:part name="parameters" element="tns:GetCrimeListGun">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlanHisList">
+    <wsdl:part name="parameters" element="tns:GetPlanHisList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlanHisListResponse">
+    <wsdl:part name="parameters" element="tns:GetPlanHisListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetLostAssetList">
+    <wsdl:part name="parameters" element="tns:GetLostAssetList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeList">
+    <wsdl:part name="parameters" element="tns:GetCrimeList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPersonList">
+    <wsdl:part name="parameters" element="tns:GetPersonList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SQLException">
+    <wsdl:part name="SQLException" element="tns:SQLException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeListResponse">
+    <wsdl:part name="parameters" element="tns:GetCrimeListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPersonListResponse">
+    <wsdl:part name="parameters" element="tns:GetPersonListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetCrimeListGunResponse">
+    <wsdl:part name="parameters" element="tns:GetCrimeListGunResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="GetWeaponList">
+    <wsdl:operation name="GetCrimeListGun">
+      <wsdl:input name="GetCrimeListGun" message="tns:GetCrimeListGun">
+    </wsdl:input>
+      <wsdl:output name="GetCrimeListGunResponse" message="tns:GetCrimeListGunResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrimeList">
+      <wsdl:input name="GetCrimeList" message="tns:GetCrimeList">
+    </wsdl:input>
+      <wsdl:output name="GetCrimeListResponse" message="tns:GetCrimeListResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanHisList">
+      <wsdl:input name="GetPlanHisList" message="tns:GetPlanHisList">
+    </wsdl:input>
+      <wsdl:output name="GetPlanHisListResponse" message="tns:GetPlanHisListResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonList">
+      <wsdl:input name="GetPersonList" message="tns:GetPersonList">
+    </wsdl:input>
+      <wsdl:output name="GetPersonListResponse" message="tns:GetPersonListResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrimeList2">
+      <wsdl:input name="GetCrimeList2" message="tns:GetCrimeList2">
+    </wsdl:input>
+      <wsdl:output name="GetCrimeList2Response" message="tns:GetCrimeList2Response">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetList">
+      <wsdl:input name="GetLostAssetList" message="tns:GetLostAssetList">
+    </wsdl:input>
+      <wsdl:output name="GetLostAssetListResponse" message="tns:GetLostAssetListResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceListWeaponServiceSoapBinding" type="tns:GetWeaponList">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetCrimeListGun">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetCrimeListGun">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetCrimeListGunResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrimeList">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetCrimeList">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetCrimeListResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlanHisList">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetPlanHisList">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetPlanHisListResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrimeList2">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetCrimeList2">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetCrimeList2Response">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonList">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetPersonList">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetPersonListResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetLostAssetList">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetLostAssetList">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetLostAssetListResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceListWeaponService">
+    <wsdl:port name="WebServiceListWeaponPort" binding="tns:WebServiceListWeaponServiceSoapBinding">
+      <soap:address location="http://localhost:8080/webServiceWeapons/services/WebServiceListWeaponPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

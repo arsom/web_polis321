@@ -1,0 +1,13 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.oracdgs9db.data.DatCountLogmoi" table="DAT_COUNT_LOGMOI" schema="POLISMIS" dynamic-insert="false" dynamic-update="false">
+        <composite-id name="id" class="com.oracdgs9db.data.DatCountLogmoiId">
+            <key-property name="userIs" type="string">
+                <column name="USER_IS" length="6"/>
+            </key-property>
+            <key-property name="qryAmt" type="long">
+                <column name="QRY_AMT" precision="18"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

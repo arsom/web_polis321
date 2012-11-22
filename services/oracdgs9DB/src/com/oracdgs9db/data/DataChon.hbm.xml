@@ -1,0 +1,25 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.oracdgs9db.data.DataChon" table="DATA_CHON" schema="POLISMIS" dynamic-insert="false" dynamic-update="false">
+        <composite-id name="id" class="com.oracdgs9db.data.DataChonId">
+            <key-property name="rdlnnamt" type="string">
+                <column name="RDLNNAMT" length="120"/>
+            </key-property>
+            <key-property name="rdlnname" type="string">
+                <column name="RDLNNAME" length="200"/>
+            </key-property>
+            <key-property name="provCode" type="string">
+                <column name="PROV_CODE" length="6"/>
+            </key-property>
+            <key-property name="provNamt" type="string">
+                <column name="PROV_NAMT" length="120"/>
+            </key-property>
+            <key-property name="ampCode" type="string">
+                <column name="AMP_CODE" length="6"/>
+            </key-property>
+            <key-property name="ampNamt" type="string">
+                <column name="AMP_NAMT" length="120"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

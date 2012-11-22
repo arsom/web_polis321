@@ -1,0 +1,2309 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" springFile="oracdgs9DB.spring.xml" type="DataService" CRUDService="true" class="com.oracdgs9db.Oracdgs9DB" id="oracdgs9DB">
+    <operation name="selDatMatchSourceByCode" operationType="hqlquery">
+        <parameter isList="false" typeRef="java.lang.String" name="code"/>
+        <return isList="true" typeRef="com.oracdgs9db.data.DatMatchSource"/>
+    </operation>
+    <operation name="getDatSuitById" operationType="hqlquery">
+        <parameter isList="false" typeRef="java.lang.String" name="id"/>
+        <return isList="false" typeRef="com.oracdgs9db.data.DatSuit"/>
+    </operation>
+    <operation name="selDatGroupC" operationType="hqlquery">
+        <return isList="true" typeRef="com.oracdgs9db.data.output.SelDatGroupCRtnType"/>
+    </operation>
+    <operation name="selStartApp" operationType="hqlquery">
+        <parameter isList="false" typeRef="java.lang.String" name="user"/>
+        <return isList="true" typeRef="com.oracdgs9db.data.output.SelStartAppRtnType"/>
+    </operation>
+    <dataobjects>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatCancelCard">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cardCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="cardDesc"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="updId"/>
+            <element allowNull="true" isList="false" typeRef="java.util.Date" name="updDate"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatChkqry">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DatChkqryId" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="qryName"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="updId"/>
+            <element allowNull="true" isList="false" typeRef="java.util.Date" name="updDate"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatCountLogmoi">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DatCountLogmoiId" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatGroupC">
+            <element allowNull="false" isList="false" typeRef="java.math.BigDecimal" name="groupId">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="groupCode"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="groupDesc"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="groupMom"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="level"/>
+            <element allowNull="true" isList="false" typeRef="java.sql.Blob" name="groupImg"/>
+            <element allowNull="true" isList="false" typeRef="java.sql.Blob" name="groupImgO"/>
+            <element allowNull="true" isList="false" typeRef="java.sql.Blob" name="groupImgS"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatMatchSource">
+            <element allowNull="false" isList="false" typeRef="java.math.BigDecimal" name="matchId">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="groupCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="sourceCode"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatNation">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="natCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="natEng"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="natThai"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="updId"/>
+            <element allowNull="true" isList="false" typeRef="java.util.Date" name="updDate"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatPatm">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="patmCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="patmDesc"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="updId"/>
+            <element allowNull="true" isList="false" typeRef="java.util.Date" name="updDate"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatPicMoi">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="pid">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="true" isList="false" typeRef="java.sql.Blob" name="picNo"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatProfession">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="profCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="profDesc"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="updId"/>
+            <element allowNull="true" isList="false" typeRef="java.util.Date" name="updDate"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatQryLimit">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DatQryLimitId" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="true" isList="false" typeRef="java.lang.Long" name="qryTot"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatQryLog">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DatQryLogId" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatQryLog2551">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DatQryLog2551Id" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="condition"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="sysDesc"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="conGroup"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="ipAddr"/>
+            <element allowNull="true" isList="false" typeRef="java.util.Date" name="updDate"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatQryLogItims">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DatQryLogItimsId" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatQryLogNew">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DatQryLogNewId" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatQryLogV">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DatQryLogVId" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatQryNewLog">
+            <element allowNull="false" isList="false" typeRef="java.lang.Long" name="qryLogId">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="userId"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="orgCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="qryDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Long" name="seqNo"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="condition"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="conGroup"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="conSource"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="ipAddr"/>
+            <element allowNull="true" isList="false" typeRef="java.util.Date" name="updDate"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatQryNewLogTest">
+            <element allowNull="false" isList="false" typeRef="java.lang.Long" name="qryLogId">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="userId"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="orgCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="qryDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Long" name="seqNo"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="condition"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="conGroup"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="conSource"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="ipAddr"/>
+            <element allowNull="true" isList="false" typeRef="java.util.Date" name="updDate"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatRoad">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="roadCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="roadDesc"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="updId"/>
+            <element allowNull="true" isList="false" typeRef="java.util.Date" name="updDate"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatSoi">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="soiCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="soiDesc1"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="soiDesc2"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="updId"/>
+            <element allowNull="true" isList="false" typeRef="java.util.Date" name="updDate"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatSourceC">
+            <element allowNull="false" isList="false" typeRef="java.math.BigDecimal" name="sourceId">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="sourceCode"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="sourceDesc"/>
+            <element allowNull="true" isList="false" typeRef="java.sql.Blob" name="sourceImg"/>
+            <element allowNull="true" isList="false" typeRef="java.sql.Blob" name="sourceImgA"/>
+            <element allowNull="true" isList="false" typeRef="java.sql.Blob" name="sourceImgO"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatSuit">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="suitCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="suitDesc"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="updId"/>
+            <element allowNull="true" isList="false" typeRef="java.util.Date" name="updDate"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DatTrok">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="trokCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="trokDesc"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="updId"/>
+            <element allowNull="true" isList="false" typeRef="java.util.Date" name="updDate"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DataChon">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DataChonId" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DataReg1">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DataReg1Id" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DataReg2">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DataReg2Id" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DataReg3">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DataReg3Id" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DataReg4">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DataReg4Id" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DataReg5">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DataReg5Id" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DataReg6">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DataReg6Id" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DataReg7">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DataReg7Id" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DataReg8">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DataReg8Id" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DataReg9">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DataReg9Id" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DataRegt1">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DataRegt1Id" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DataRegt2">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DataRegt2Id" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DataRegt3">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DataRegt3Id" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DataRegt4">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DataRegt4Id" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DataRegt40">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DataRegt40Id" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DataRegt5">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DataRegt5Id" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DataRegt6">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DataRegt6Id" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DataRegt7">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DataRegt7Id" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DataRegt8">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DataRegt8Id" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.oracdgs9db.data.DataRegt9">
+            <element allowNull="false" isList="false" typeRef="com.oracdgs9db.data.DataRegt9Id" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DataReg7Id">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnnamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnname">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DataRegt8Id">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnnamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnname">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tamCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tamNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DataReg5Id">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnnamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnname">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DataRegt4Id">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnnamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnname">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tamCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tamNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DatQryLogId">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="userId">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="qryDate">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.Long" name="seqNo">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="condition">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="sysDesc">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="conGroup">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ipAddr">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.util.Date" name="updDate">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="qryGroup">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="qrySource">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DatCountLogmoiId">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="userIs">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.Long" name="qryAmt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DataRegt3Id">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnnamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnname">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tamCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tamNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DataReg6Id">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnnamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnname">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DatQryLogNewId">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="userId">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="qryDate">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.Long" name="seqNo">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="condition">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="qryGroup">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="qrySource">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ipAddr">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.util.Date" name="updDate">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DataRegt9Id">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnnamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnname">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tamCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tamNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DataRegt5Id">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnnamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnname">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tamCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tamNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DataReg4Id">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnnamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnname">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DataReg1Id">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnnamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnname">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DatQryLogVId">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="userId">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="qryDate">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.Long" name="seqNo">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="condition">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="sysDesc">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="conGroup">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ipAddr">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.util.Date" name="updDate">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DataRegt2Id">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnnamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnname">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tamCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tamNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DatQryLogItimsId">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="userId">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="qryDate">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.Long" name="seqNo">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="condition">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="sysDesc">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="conGroup">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ipAddr">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.util.Date" name="updDate">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DatQryLog2551Id">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="userId">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="qryDate">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.Long" name="seqNo">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DataRegt7Id">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnnamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnname">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tamCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tamNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DatQryLimitId">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="userId">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="qryDate">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DataReg8Id">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnnamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnname">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DataRegt1Id">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnnamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnname">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tamCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tamNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DataRegt6Id">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnnamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnname">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tamCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tamNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DataReg3Id">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnnamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnname">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DataReg2Id">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnnamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnname">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DatChkqryId">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="userId">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="qryPid">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DataReg9Id">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnnamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnname">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DataRegt40Id">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnnamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnname">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tamCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tamNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="id" javaType="com.oracdgs9db.data.DataChonId">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnnamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="rdlnname">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampCode">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampNamt">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <require>insert</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+            </element>
+        </dataobject>
+        <dataobject supportsQuickData="false" javaType="com.oracdgs9db.data.output.SelDatGroupCRtnType">
+            <element allowNull="false" isList="false" typeRef="java.math.BigDecimal" name="id"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="code"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="desc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="mom"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" javaType="com.oracdgs9db.data.output.SelStartAppRtnType">
+            <element allowNull="false" isList="false" typeRef="java.lang.Long" name="seq"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="group"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="source"/>
+        </dataobject>
+    </dataobjects>
+</service>

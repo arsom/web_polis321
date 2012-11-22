@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" springFile="hrdb.spring.xml" type="DataService" CRUDService="true" class="com.hrdb.Hrdb" id="hrdb">
+    <operation name="getDepartmentById" operationType="hqlquery">
+        <parameter isList="false" typeRef="java.lang.Integer" name="id"/>
+        <return isList="false" typeRef="com.hrdb.data.Department"/>
+    </operation>
+    <dataobjects>
+        <dataobject supportsQuickData="true" javaType="com.hrdb.data.Department">
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="deptid">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+                <exclude>insert</exclude>
+            </element>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="name"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.Integer" name="budget"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.Integer" name="q1"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.Integer" name="q2"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.Integer" name="q3"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.Integer" name="q4"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="deptcode"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="location"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.Integer" name="tenantid"/>
+            <element allowNull="true" isList="true" typeRef="com.hrdb.data.Employee" name="employees"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.hrdb.data.Employee">
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="eid">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+                <exclude>insert</exclude>
+            </element>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="firstname"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="lastname"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="street"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="city"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="state"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="zip"/>
+            <element allowNull="true" isList="false" typeRef="java.util.Date" name="birthdate"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="picurl"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="twitterid"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.Integer" name="tenantid"/>
+            <element allowNull="true" isList="false" typeRef="com.hrdb.data.Employee" name="employee"/>
+            <element allowNull="true" isList="false" typeRef="com.hrdb.data.Department" name="department"/>
+            <element allowNull="true" isList="true" typeRef="com.hrdb.data.Employee" name="employees"/>
+            <element allowNull="true" isList="true" typeRef="com.hrdb.data.Vacation" name="vacations"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.hrdb.data.User">
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="userid">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+                <exclude>insert</exclude>
+            </element>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="username"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="password"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="role"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.Integer" name="tenantid"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.hrdb.data.Vacation">
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+                <exclude>insert</exclude>
+            </element>
+            <element allowNull="true" isList="false" typeRef="java.util.Date" name="startdate"/>
+            <element allowNull="true" isList="false" typeRef="java.util.Date" name="enddate"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.Integer" name="tenantid"/>
+            <element allowNull="false" isList="false" typeRef="com.hrdb.data.Employee" name="employee"/>
+        </dataobject>
+    </dataobjects>
+</service>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="WebServiceDetailLocationService" targetNamespace="http://Location.th/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://Location.th/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://Location.th/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<import namespace="http://Location.th/" schemaLocation="http://localhost:8080/webServiceLocation/services/WebServiceDetailLocationPort?xsd=webservicedetaillocation_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="GetPersonResponse">
+    <wsdl:part name="parameters" element="tns:GetPersonResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPersonVInfor">
+    <wsdl:part name="parameters" element="tns:GetPersonVInfor">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlace">
+    <wsdl:part name="parameters" element="tns:GetPlace">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPerson">
+    <wsdl:part name="parameters" element="tns:GetPerson">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlacePeopleInvol">
+    <wsdl:part name="parameters" element="tns:GetPlacePeopleInvol">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SQLException">
+    <wsdl:part name="SQLException" element="tns:SQLException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlacePeopleInvolResponse">
+    <wsdl:part name="parameters" element="tns:GetPlacePeopleInvolResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlaceHisCaseResponse">
+    <wsdl:part name="parameters" element="tns:GetPlaceHisCaseResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlaceTypePersonResponse">
+    <wsdl:part name="parameters" element="tns:GetPlaceTypePersonResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlaceResponse">
+    <wsdl:part name="parameters" element="tns:GetPlaceResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetpersonOffender">
+    <wsdl:part name="parameters" element="tns:GetpersonOffender">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPersonVInforResponse">
+    <wsdl:part name="parameters" element="tns:GetPersonVInforResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlaceHisCase">
+    <wsdl:part name="parameters" element="tns:GetPlaceHisCase">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlaceTypePerson">
+    <wsdl:part name="parameters" element="tns:GetPlaceTypePerson">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetpersonOffenderResponse">
+    <wsdl:part name="parameters" element="tns:GetpersonOffenderResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="GetLocationDetail">
+    <wsdl:operation name="GetpersonOffender">
+      <wsdl:input name="GetpersonOffender" message="tns:GetpersonOffender">
+    </wsdl:input>
+      <wsdl:output name="GetpersonOffenderResponse" message="tns:GetpersonOffenderResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlaceHisCase">
+      <wsdl:input name="GetPlaceHisCase" message="tns:GetPlaceHisCase">
+    </wsdl:input>
+      <wsdl:output name="GetPlaceHisCaseResponse" message="tns:GetPlaceHisCaseResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlace">
+      <wsdl:input name="GetPlace" message="tns:GetPlace">
+    </wsdl:input>
+      <wsdl:output name="GetPlaceResponse" message="tns:GetPlaceResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlaceTypePerson">
+      <wsdl:input name="GetPlaceTypePerson" message="tns:GetPlaceTypePerson">
+    </wsdl:input>
+      <wsdl:output name="GetPlaceTypePersonResponse" message="tns:GetPlaceTypePersonResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPerson">
+      <wsdl:input name="GetPerson" message="tns:GetPerson">
+    </wsdl:input>
+      <wsdl:output name="GetPersonResponse" message="tns:GetPersonResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonVInfor">
+      <wsdl:input name="GetPersonVInfor" message="tns:GetPersonVInfor">
+    </wsdl:input>
+      <wsdl:output name="GetPersonVInforResponse" message="tns:GetPersonVInforResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlacePeopleInvol">
+      <wsdl:input name="GetPlacePeopleInvol" message="tns:GetPlacePeopleInvol">
+    </wsdl:input>
+      <wsdl:output name="GetPlacePeopleInvolResponse" message="tns:GetPlacePeopleInvolResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceDetailLocationServiceSoapBinding" type="tns:GetLocationDetail">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetpersonOffender">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetpersonOffender">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetpersonOffenderResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlaceHisCase">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetPlaceHisCase">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetPlaceHisCaseResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlace">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetPlace">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetPlaceResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlaceTypePerson">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetPlaceTypePerson">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetPlaceTypePersonResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPerson">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetPerson">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetPersonResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonVInfor">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetPersonVInfor">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetPersonVInforResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlacePeopleInvol">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetPlacePeopleInvol">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetPlacePeopleInvolResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceDetailLocationService">
+    <wsdl:port name="WebServiceDetailLocationPort" binding="tns:WebServiceDetailLocationServiceSoapBinding">
+      <soap:address location="http://localhost:8080/webServiceLocation/services/WebServiceDetailLocationPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,45 @@
+{
+	"methods": [{
+		"name": "getLostAsseetListAccessories",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.asset.webservicelistassetservice.GetLostAsseetListAccessories"
+		}],
+		"returnType": "th.asset.webservicelistassetservice.GetLostAsseetListAccessoriesResponse"
+	}, {
+		"name": "getLostAssetListElec",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.asset.webservicelistassetservice.GetLostAssetListElec"
+		}],
+		"returnType": "th.asset.webservicelistassetservice.GetLostAssetListElecResponse"
+	}, {
+		"name": "getLostAssetListGun",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.asset.webservicelistassetservice.GetLostAssetListGun"
+		}],
+		"returnType": "th.asset.webservicelistassetservice.GetLostAssetListGunResponse"
+	}, {
+		"name": "getLostAssetListUnknowPrice",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.asset.webservicelistassetservice.GetLostAssetListUnknowPrice"
+		}],
+		"returnType": "th.asset.webservicelistassetservice.GetLostAssetListUnknowPriceResponse"
+	}, {
+		"name": "getSelectPage",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.asset.webservicelistassetservice.GetSelectPage"
+		}],
+		"returnType": "th.asset.webservicelistassetservice.GetSelectPageResponse"
+	}],
+	"serviceType": "JSON-RPC",
+	"serviceURL": "WebServiceListAssetService.json"
+}

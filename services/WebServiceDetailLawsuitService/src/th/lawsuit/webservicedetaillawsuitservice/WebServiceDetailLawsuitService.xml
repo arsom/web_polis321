@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jaxws:bindings
+    xmlns:jaxws="http://java.sun.com/xml/ns/jaxws"
+    xmlns:jws="http://java.sun.com/xml/ns/javaee"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    wsdlLocation="file:/C:/Users/ACER/Documents/WaveMaker/projects/web_polis3/services/WebServiceDetailLawsuitService/src/th/lawsuit/webservicedetaillawsuitservice/WebServiceDetailLawsuitService.wsdl">
+    <jaxws:package name="th.lawsuit.webservicedetaillawsuitservice"/>
+    <jaxws:enableWrapperStyle>false</jaxws:enableWrapperStyle>
+    <jaxws:bindings node="wsdl:definitions/wsdl:service[@name='WebServiceDetailLawsuitService']">
+        <jaxws:class name="WebServiceDetailLawsuitServiceClient"/>
+    </jaxws:bindings>
+</jaxws:bindings>

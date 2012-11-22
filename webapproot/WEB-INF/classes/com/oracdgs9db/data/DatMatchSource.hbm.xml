@@ -1,0 +1,15 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.oracdgs9db.data.DatMatchSource" table="DAT_MATCH_SOURCE" schema="POLISMIS" dynamic-insert="false" dynamic-update="false">
+        <id name="matchId" type="big_decimal">
+            <column name="MATCH_ID" precision="22"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="groupCode" type="string">
+            <column name="GROUP_CODE" length="2" not-null="true"/>
+        </property>
+        <property name="sourceCode" type="string">
+            <column name="SOURCE_CODE" length="2" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

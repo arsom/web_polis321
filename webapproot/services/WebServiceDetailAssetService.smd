@@ -1,0 +1,85 @@
+{
+	"methods": [{
+		"name": "getLostAssetAccessories",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.asset.webservicedetailassetservice.GetLostAssetAccessories"
+		}],
+		"returnType": "th.asset.webservicedetailassetservice.GetLostAssetAccessoriesResponse"
+	}, {
+		"name": "getLostAssetAccessoriesDetail",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.asset.webservicedetailassetservice.GetLostAssetAccessoriesDetail"
+		}],
+		"returnType": "th.asset.webservicedetailassetservice.GetLostAssetAccessoriesDetailResponse"
+	}, {
+		"name": "getLostAssetElec",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.asset.webservicedetailassetservice.GetLostAssetElec"
+		}],
+		"returnType": "th.asset.webservicedetailassetservice.GetLostAssetElecResponse"
+	}, {
+		"name": "getLostAssetElecBrand",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.asset.webservicedetailassetservice.GetLostAssetElecBrand"
+		}],
+		"returnType": "th.asset.webservicedetailassetservice.GetLostAssetElecBrandResponse"
+	}, {
+		"name": "getLostAssetElecCharacter",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.asset.webservicedetailassetservice.GetLostAssetElecCharacter"
+		}],
+		"returnType": "th.asset.webservicedetailassetservice.GetLostAssetElecCharacterResponse"
+	}, {
+		"name": "getLostAssetGun",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.asset.webservicedetailassetservice.GetLostAssetGun"
+		}],
+		"returnType": "th.asset.webservicedetailassetservice.GetLostAssetGunResponse"
+	}, {
+		"name": "getLostAssetGunBrand",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.asset.webservicedetailassetservice.GetLostAssetGunBrand"
+		}],
+		"returnType": "th.asset.webservicedetailassetservice.GetLostAssetGunBrandResponse"
+	}, {
+		"name": "getLostAssetGunDetail",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.asset.webservicedetailassetservice.GetLostAssetGunDetail"
+		}],
+		"returnType": "th.asset.webservicedetailassetservice.GetLostAssetGunDetailResponse"
+	}, {
+		"name": "getLostAssetUnknows",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.asset.webservicedetailassetservice.GetLostAssetUnknows"
+		}],
+		"returnType": "th.asset.webservicedetailassetservice.GetLostAssetUnknowsResponse"
+	}, {
+		"name": "getLostAssetUnknowsDetail",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.asset.webservicedetailassetservice.GetLostAssetUnknowsDetail"
+		}],
+		"returnType": "th.asset.webservicedetailassetservice.GetLostAssetUnknowsDetailResponse"
+	}],
+	"serviceType": "JSON-RPC",
+	"serviceURL": "WebServiceDetailAssetService.json"
+}

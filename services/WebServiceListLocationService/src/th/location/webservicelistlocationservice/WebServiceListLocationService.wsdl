@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="WebServiceListLocationService" targetNamespace="http://Location.th/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://Location.th/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://Location.th/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<import namespace="http://Location.th/" schemaLocation="http://localhost:8080/webServiceLocation/services/WebServiceListLocationPort?xsd=webservicelistlocation_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="GetPlaceList">
+    <wsdl:part name="parameters" element="tns:GetPlaceList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SQLException">
+    <wsdl:part name="SQLException" element="tns:SQLException">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPersonListResponse">
+    <wsdl:part name="parameters" element="tns:GetPersonListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPersonList">
+    <wsdl:part name="parameters" element="tns:GetPersonList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="GetPlaceListResponse">
+    <wsdl:part name="parameters" element="tns:GetPlaceListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="GetLocationList">
+    <wsdl:operation name="GetPlaceList">
+      <wsdl:input name="GetPlaceList" message="tns:GetPlaceList">
+    </wsdl:input>
+      <wsdl:output name="GetPlaceListResponse" message="tns:GetPlaceListResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonList">
+      <wsdl:input name="GetPersonList" message="tns:GetPersonList">
+    </wsdl:input>
+      <wsdl:output name="GetPersonListResponse" message="tns:GetPersonListResponse">
+    </wsdl:output>
+      <wsdl:fault name="SQLException" message="tns:SQLException">
+    </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceListLocationServiceSoapBinding" type="tns:GetLocationList">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetPersonList">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetPersonList">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetPersonListResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlaceList">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="GetPlaceList">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="GetPlaceListResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="SQLException">
+        <soap:fault name="SQLException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceListLocationService">
+    <wsdl:port name="WebServiceListLocationPort" binding="tns:WebServiceListLocationServiceSoapBinding">
+      <soap:address location="http://localhost:8080/webServiceLocation/services/WebServiceListLocationPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

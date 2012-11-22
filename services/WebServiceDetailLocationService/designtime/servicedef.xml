@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" springFile="WebServiceDetailLocationService.spring.xml" type="WebService" CRUDService="false" class="th.location.webservicedetaillocationservice.WebServiceDetailLocationService" id="WebServiceDetailLocationService">
+    <operation name="getPerson">
+        <parameter isList="false" typeRef="th.location.webservicedetaillocationservice.GetPerson" name="parameters"/>
+        <return isList="false" typeRef="th.location.webservicedetaillocationservice.GetPersonResponse"/>
+    </operation>
+    <operation name="getPersonVInfor">
+        <parameter isList="false" typeRef="th.location.webservicedetaillocationservice.GetPersonVInfor" name="parameters"/>
+        <return isList="false" typeRef="th.location.webservicedetaillocationservice.GetPersonVInforResponse"/>
+    </operation>
+    <operation name="getPlace">
+        <parameter isList="false" typeRef="th.location.webservicedetaillocationservice.GetPlace" name="parameters"/>
+        <return isList="false" typeRef="th.location.webservicedetaillocationservice.GetPlaceResponse"/>
+    </operation>
+    <operation name="getPlaceHisCase">
+        <parameter isList="false" typeRef="th.location.webservicedetaillocationservice.GetPlaceHisCase" name="parameters"/>
+        <return isList="false" typeRef="th.location.webservicedetaillocationservice.GetPlaceHisCaseResponse"/>
+    </operation>
+    <operation name="getPlacePeopleInvol">
+        <parameter isList="false" typeRef="th.location.webservicedetaillocationservice.GetPlacePeopleInvol" name="parameters"/>
+        <return isList="false" typeRef="th.location.webservicedetaillocationservice.GetPlacePeopleInvolResponse"/>
+    </operation>
+    <operation name="getPlaceTypePerson">
+        <parameter isList="false" typeRef="th.location.webservicedetaillocationservice.GetPlaceTypePerson" name="parameters"/>
+        <return isList="false" typeRef="th.location.webservicedetaillocationservice.GetPlaceTypePersonResponse"/>
+    </operation>
+    <operation name="getpersonOffender">
+        <parameter isList="false" typeRef="th.location.webservicedetaillocationservice.GetpersonOffender" name="parameters"/>
+        <return isList="false" typeRef="th.location.webservicedetaillocationservice.GetpersonOffenderResponse"/>
+    </operation>
+    <dataobjects>
+        <dataobject supportsQuickData="false" name="GetpersonOffenderResponse" javaType="th.location.webservicedetaillocationservice.GetpersonOffenderResponse">
+            <element allowNull="false" isList="true" typeRef="th.location.webservicedetaillocationservice.SetPersonOffenderHisType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetPersonOffenderHisType" javaType="th.location.webservicedetaillocationservice.SetPersonOffenderHisType">
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseYear"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="dsc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="org"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="perCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="serialNo"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPlaceTypePerson" javaType="th.location.webservicedetaillocationservice.GetPlaceTypePerson">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPersonVInforResponse" javaType="th.location.webservicedetaillocationservice.GetPersonVInforResponse">
+            <element allowNull="false" isList="true" typeRef="th.location.webservicedetaillocationservice.SetPersonVInfomationType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetPersonVInfomationType" javaType="th.location.webservicedetaillocationservice.SetPersonVInfomationType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="branDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="colorCarDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="perCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="serialNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehModel"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehPlate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehTypeName"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPlaceHisCase" javaType="th.location.webservicedetaillocationservice.GetPlaceHisCase">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetpersonOffender" javaType="th.location.webservicedetaillocationservice.GetpersonOffender">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPlaceResponse" javaType="th.location.webservicedetaillocationservice.GetPlaceResponse">
+            <element allowNull="false" isList="true" typeRef="th.location.webservicedetaillocationservice.SetPlaceDetailType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetPlaceDetailType" javaType="th.location.webservicedetaillocationservice.SetPlaceDetailType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="acrossName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="actDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="addrDesc1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="addrDesc2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="behaDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="gangNme"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="hisDte"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="locName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgNme"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="palceNme"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="placeCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="placeGrp"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="roadName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="soiName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="subName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="typeName"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPlaceTypePersonResponse" javaType="th.location.webservicedetaillocationservice.GetPlaceTypePersonResponse">
+            <element allowNull="false" isList="true" typeRef="th.location.webservicedetaillocationservice.SetPlaceTypePersonType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetPlaceTypePersonType" javaType="th.location.webservicedetaillocationservice.SetPlaceTypePersonType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="pertype"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPlaceHisCaseResponse" javaType="th.location.webservicedetaillocationservice.GetPlaceHisCaseResponse">
+            <element allowNull="false" isList="true" typeRef="th.location.webservicedetaillocationservice.SetPlaceHiscaseType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetPlaceHiscaseType" javaType="th.location.webservicedetaillocationservice.SetPlaceHiscaseType">
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseYear"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="dsc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="placeCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="serialNo"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPlacePeopleInvolResponse" javaType="th.location.webservicedetaillocationservice.GetPlacePeopleInvolResponse">
+            <element allowNull="false" isList="true" typeRef="th.location.webservicedetaillocationservice.SetPlacePeopleType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetPlacePeopleType" javaType="th.location.webservicedetaillocationservice.SetPlacePeopleType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="firstEnme"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="firstTnme"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lastEnme"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lastTnme"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="middleEnme"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="perCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="perId"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="perType"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="placeCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="placeSubType"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="placeType"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="prefixCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="serialNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="titleDesc"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SQLException" javaType="th.location.webservicedetaillocationservice.SQLException"/>
+        <dataobject supportsQuickData="false" name="GetPlacePeopleInvol" javaType="th.location.webservicedetaillocationservice.GetPlacePeopleInvol">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPerson" javaType="th.location.webservicedetaillocationservice.GetPerson">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPlace" javaType="th.location.webservicedetaillocationservice.GetPlace">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPersonVInfor" javaType="th.location.webservicedetaillocationservice.GetPersonVInfor">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPersonResponse" javaType="th.location.webservicedetaillocationservice.GetPersonResponse">
+            <element allowNull="false" isList="true" typeRef="th.location.webservicedetaillocationservice.SetPersonDetailType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetPersonDetailType" javaType="th.location.webservicedetaillocationservice.SetPersonDetailType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="acrossName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="actionStatus"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="addrDesc31"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="addrDesc32"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="birthDte"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="firstEnme"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="firstTnme"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="hisDte"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lastEnme"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lastTnme"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="locName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="middleEnme"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="natCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="natName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="org"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="perCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="perId"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="raceCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="raceName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="religionCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="religionName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="roadName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="sex"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="soiName"/>
+        </dataobject>
+    </dataobjects>
+</service>

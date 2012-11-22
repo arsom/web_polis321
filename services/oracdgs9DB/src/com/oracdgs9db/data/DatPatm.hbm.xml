@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.oracdgs9db.data.DatPatm" table="DAT_PATM" schema="POLISMIS" dynamic-insert="false" dynamic-update="false">
+        <id name="patmCode" type="string">
+            <column name="PATM_CODE" length="8"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="patmDesc" type="string">
+            <column name="PATM_DESC" length="40"/>
+        </property>
+        <property name="updId" type="string">
+            <column name="UPD_ID" length="13"/>
+        </property>
+        <property name="updDate" type="timestamp">
+            <column name="UPD_DATE"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" springFile="WebServiceListVehicleService.spring.xml" type="WebService" CRUDService="false" class="th.vehicles.webservicelistvehicleservice.WebServiceListVehicleService" id="WebServiceListVehicleService">
+    <operation name="getAccidentCarList">
+        <parameter isList="false" typeRef="th.vehicles.webservicelistvehicleservice.GetAccidentCarList" name="parameters"/>
+        <return isList="false" typeRef="th.vehicles.webservicelistvehicleservice.GetAccidentCarListResponse"/>
+    </operation>
+    <operation name="getCarList">
+        <parameter isList="false" typeRef="th.vehicles.webservicelistvehicleservice.GetCarList" name="parameters"/>
+        <return isList="false" typeRef="th.vehicles.webservicelistvehicleservice.GetCarListResponse"/>
+    </operation>
+    <operation name="getConfiscateList">
+        <parameter isList="false" typeRef="th.vehicles.webservicelistvehicleservice.GetConfiscateList" name="parameters"/>
+        <return isList="false" typeRef="th.vehicles.webservicelistvehicleservice.GetConfiscateListResponse"/>
+    </operation>
+    <operation name="getCrimeList">
+        <parameter isList="false" typeRef="th.vehicles.webservicelistvehicleservice.GetCrimeList" name="parameters"/>
+        <return isList="false" typeRef="th.vehicles.webservicelistvehicleservice.GetCrimeListResponse"/>
+    </operation>
+    <operation name="getInterceptList">
+        <parameter isList="false" typeRef="th.vehicles.webservicelistvehicleservice.GetInterceptList" name="parameters"/>
+        <return isList="false" typeRef="th.vehicles.webservicelistvehicleservice.GetInterceptListResponse"/>
+    </operation>
+    <operation name="getLostCarList">
+        <parameter isList="false" typeRef="th.vehicles.webservicelistvehicleservice.GetLostCarList" name="parameters"/>
+        <return isList="false" typeRef="th.vehicles.webservicelistvehicleservice.GetLostCarListResponse"/>
+    </operation>
+    <operation name="getLostCarList2">
+        <parameter isList="false" typeRef="th.vehicles.webservicelistvehicleservice.GetLostCarList2" name="parameters"/>
+        <return isList="false" typeRef="th.vehicles.webservicelistvehicleservice.GetLostCarList2Response"/>
+    </operation>
+    <operation name="getPersonList">
+        <parameter isList="false" typeRef="th.vehicles.webservicelistvehicleservice.GetPersonList" name="parameters"/>
+        <return isList="false" typeRef="th.vehicles.webservicelistvehicleservice.GetPersonListResponse"/>
+    </operation>
+    <operation name="getTicketList">
+        <parameter isList="false" typeRef="th.vehicles.webservicelistvehicleservice.GetTicketList" name="parameters"/>
+        <return isList="false" typeRef="th.vehicles.webservicelistvehicleservice.GetTicketListResponse"/>
+    </operation>
+    <operation name="getTrcList">
+        <parameter isList="false" typeRef="th.vehicles.webservicelistvehicleservice.GetTrcList" name="parameters"/>
+        <return isList="false" typeRef="th.vehicles.webservicelistvehicleservice.GetTrcListResponse"/>
+    </operation>
+    <dataobjects>
+        <dataobject supportsQuickData="false" name="GetConfiscateList" javaType="th.vehicles.webservicelistvehicleservice.GetConfiscateList">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg4"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg5"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg6"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg7"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetInterceptListResponse" javaType="th.vehicles.webservicelistvehicleservice.GetInterceptListResponse">
+            <element allowNull="false" isList="true" typeRef="th.vehicles.webservicelistvehicleservice.SetInterceptListType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetInterceptListType" javaType="th.vehicles.webservicelistvehicleservice.SetInterceptListType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="brandName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cancelFlag"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carModel"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="colorName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="plate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="seizeCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="seizeType"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="updDate"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPersonList" javaType="th.vehicles.webservicelistvehicleservice.GetPersonList">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg4"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg5"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg6"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCarListResponse" javaType="th.vehicles.webservicelistvehicleservice.GetCarListResponse">
+            <element allowNull="false" isList="true" typeRef="th.vehicles.webservicelistvehicleservice.SetVariableType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetVariableType" javaType="th.vehicles.webservicelistvehicleservice.SetVariableType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="brandDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="c01BrandCar"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="c01ColorName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="c01Name"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="c01Numbody"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="c01Numeng"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="c01OffProve"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="c01Plate1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="c01Plate2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="proveDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="title"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCrimeList" javaType="th.vehicles.webservicelistvehicleservice.GetCrimeList">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg4"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg5"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg6"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg7"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg8"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg9"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg10"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCarList" javaType="th.vehicles.webservicelistvehicleservice.GetCarList">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg4"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg5"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg6"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg7"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetTrcListResponse" javaType="th.vehicles.webservicelistvehicleservice.GetTrcListResponse">
+            <element allowNull="false" isList="true" typeRef="th.vehicles.webservicelistvehicleservice.SetTrcListType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetTrcListType" javaType="th.vehicles.webservicelistvehicleservice.SetTrcListType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="brandDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="trc01OffBr"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="trc01OffProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="trc01OwnName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="trc01Plate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="trc06Numbody"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="trc06Numeng"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetTicketList" javaType="th.vehicles.webservicelistvehicleservice.GetTicketList">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg4"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCrimeListResponse" javaType="th.vehicles.webservicelistvehicleservice.GetCrimeListResponse">
+            <element allowNull="false" isList="true" typeRef="th.vehicles.webservicelistvehicleservice.SetVListType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetVListType" javaType="th.vehicles.webservicelistvehicleservice.SetVListType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="brandDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="crimeNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="crimeYear"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occFname"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occLname"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occTitle"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="org"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="typeCarDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicleBnameCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicleCwCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicleDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicleNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicleRegNo1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicleRegNo2"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetTrcList" javaType="th.vehicles.webservicelistvehicleservice.GetTrcList">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg4"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg5"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetConfiscateListResponse" javaType="th.vehicles.webservicelistvehicleservice.GetConfiscateListResponse">
+            <element allowNull="false" isList="true" typeRef="th.vehicles.webservicelistvehicleservice.SetConfiscateListType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetConfiscateListType" javaType="th.vehicles.webservicelistvehicleservice.SetConfiscateListType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="brandName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cancelFlag"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carModel"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="colorName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="plate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="seizeCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="seizeType"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="updDate"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetTicketListResponse" javaType="th.vehicles.webservicelistvehicleservice.GetTicketListResponse">
+            <element allowNull="false" isList="true" typeRef="th.vehicles.webservicelistvehicleservice.SetTicketListType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetTicketListType" javaType="th.vehicles.webservicelistvehicleservice.SetTicketListType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="accuseDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="bookNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="bookPre"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="brandCarCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="brandDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carPlate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carPlate1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carPlate2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="name"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orderID"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orderName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orderYear"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="pageNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="perID"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provPlateCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="refNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="staffName"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPersonListResponse" javaType="th.vehicles.webservicelistvehicleservice.GetPersonListResponse">
+            <element allowNull="false" isList="true" typeRef="th.vehicles.webservicelistvehicleservice.SetByListType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetByListType" javaType="th.vehicles.webservicelistvehicleservice.SetByListType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="brandDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="grpDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="name"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="perCde"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="perId"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="plate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="serialNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="sex"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetInterceptList" javaType="th.vehicles.webservicelistvehicleservice.GetInterceptList">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg4"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg5"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg6"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg7"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostCarList2" javaType="th.vehicles.webservicelistvehicleservice.GetLostCarList2">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg4"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg5"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg6"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg7"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SQLException" javaType="th.vehicles.webservicelistvehicleservice.SQLException"/>
+        <dataobject supportsQuickData="false" name="GetLostCarListResponse" javaType="th.vehicles.webservicelistvehicleservice.GetLostCarListResponse">
+            <element allowNull="false" isList="true" typeRef="th.vehicles.webservicelistvehicleservice.SetCarListType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetCarListType" javaType="th.vehicles.webservicelistvehicleservice.SetCarListType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="brandDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carId"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carNumbody"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carPlate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="carSEQ"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseOff"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="name"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="org"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="police"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provDesc"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetAccidentCarList" javaType="th.vehicles.webservicelistvehicleservice.GetAccidentCarList">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg4"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostCarList2Response" javaType="th.vehicles.webservicelistvehicleservice.GetLostCarList2Response">
+            <element allowNull="false" isList="true" typeRef="th.vehicles.webservicelistvehicleservice.SetPBTType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetPBTType" javaType="th.vehicles.webservicelistvehicleservice.SetPBTType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="brandName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="crimeNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="crimeYear"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="name"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="numbody"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="polisName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicleNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicleReg"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetAccidentCarListResponse" javaType="th.vehicles.webservicelistvehicleservice.GetAccidentCarListResponse">
+            <element allowNull="false" isList="true" typeRef="th.vehicles.webservicelistvehicleservice.SetAccidentType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetAccidentType" javaType="th.vehicles.webservicelistvehicleservice.SetAccidentType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carPerAge"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carPerCard"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carPlate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carSEQ"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cgtAccideCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cgtAccideYY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="driveSta"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="name"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nationName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="sex"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostCarList" javaType="th.vehicles.webservicelistvehicleservice.GetLostCarList">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg4"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg5"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg6"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg7"/>
+        </dataobject>
+    </dataobjects>
+</service>

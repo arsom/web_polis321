@@ -1,0 +1,34 @@
+{
+	"methods": [{
+		"name": "getDatSuitById",
+		"operationType": "hqlquery",
+		"parameters": [{
+			"name": "id",
+			"type": "java.lang.String"
+		}],
+		"returnType": "com.oracdgs9db.data.DatSuit"
+	}, {
+		"name": "selDatGroupC",
+		"operationType": "hqlquery",
+		"parameters": null,
+		"returnType": "[com.oracdgs9db.data.output.SelDatGroupCRtnType]"
+	}, {
+		"name": "selDatMatchSourceByCode",
+		"operationType": "hqlquery",
+		"parameters": [{
+			"name": "code",
+			"type": "java.lang.String"
+		}],
+		"returnType": "[com.oracdgs9db.data.DatMatchSource]"
+	}, {
+		"name": "selStartApp",
+		"operationType": "hqlquery",
+		"parameters": [{
+			"name": "user",
+			"type": "java.lang.String"
+		}],
+		"returnType": "[com.oracdgs9db.data.output.SelStartAppRtnType]"
+	}],
+	"serviceType": "JSON-RPC",
+	"serviceURL": "oracdgs9DB.json"
+}

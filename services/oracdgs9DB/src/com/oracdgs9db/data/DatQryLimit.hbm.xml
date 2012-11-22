@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.oracdgs9db.data.DatQryLimit" table="DAT_QRY_LIMIT" schema="POLISMIS" dynamic-insert="false" dynamic-update="false">
+        <composite-id name="id" class="com.oracdgs9db.data.DatQryLimitId">
+            <key-property name="userId" type="string">
+                <column name="USER_ID" length="6"/>
+            </key-property>
+            <key-property name="qryDate" type="string">
+                <column name="QRY_DATE" length="8"/>
+            </key-property>
+        </composite-id>
+        <property name="qryTot" type="long">
+            <column name="QRY_TOT" precision="12"/>
+        </property>
+    </class>
+</hibernate-mapping>

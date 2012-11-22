@@ -1,0 +1,42 @@
+div[id$=pnlbodyfooter]
+{
+    background-image:url('resources/images/logos/bg_page.png');
+    background-position-y:-1px;
+}body.tundra .Web_polis_menu_footer .wmlayout .Web_polis_menu_footer-pnliconpointer {
+	background:url("resources/images/logos/bg_input_show_num_r.png");
+	background-repeat:no-repeat;
+background-position:top center;
+background-position-y:15px;
+}
+
+body.tundra .Web_polis_menu_footer .wmlayout .Web_polis_menu_footer-panel8 {
+	background-image:url('resources/images/logos/tb8.png');
+}
+
+body.tundra .Web_polis_menu_footer .wmlayout .Web_polis_menu_footer-pnliconresult {
+	background:url("resources/images/logos/bg_input_show_num_r.png");
+	background-repeat:no-repeat;
+background-position:top center;
+background-position-y:-16px;
+}
+
+body.tundra .Web_polis_menu_footer .wmlayout .Web_polis_menu_footer-panel48 {
+	background:url("resources/images/logos/bg_input_show_num_n.png");
+	background-repeat:no-repeat;
+background-position:top center;
+background-position-y:-16px;
+}
+
+body.tundra .Web_polis_menu_footer .wmlayout .Web_polis_menu_footer-panel49 {
+	background:url("resources/images/logos/bg_input_show_num_n.png");
+	background-repeat:no-repeat;
+background-position:top center;
+background-position-y:-16px;
+}
+
+body.tundra .Web_polis_menu_footer .wmlayout .Web_polis_menu_footer-panel50 {
+	background:url("resources/images/logos/bg_input_show_num_n.png");
+	background-repeat:no-repeat;
+    background-position:top center;
+    background-position-y:-16px;
+}

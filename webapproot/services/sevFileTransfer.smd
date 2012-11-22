@@ -1,0 +1,27 @@
+{
+	"methods": [{
+		"name": "doDownload",
+		"operationType": null,
+		"parameters": [{
+			"name": "id",
+			"type": "java.lang.String"
+		}],
+		"returnType": "com.wavemaker.runtime.server.DownloadResponse"
+	}, {
+		"name": "getPhoto",
+		"operationType": null,
+		"parameters": [{
+			"name": "id",
+			"type": "java.lang.String"
+		}, {
+			"name": "action",
+			"type": "java.lang.String"
+		}, {
+			"name": "base",
+			"type": "java.lang.String"
+		}],
+		"returnType": "com.wavemaker.runtime.server.DownloadResponse"
+	}],
+	"serviceType": "JSON-RPC",
+	"serviceURL": "sevFileTransfer.json"
+}

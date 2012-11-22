@@ -1,0 +1,149 @@
+{
+	"methods": [{
+		"name": "getAccNation",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicedetailvehicleservice.GetAccNation"
+		}],
+		"returnType": "th.vehicles.webservicedetailvehicleservice.GetAccNationResponse"
+	}, {
+		"name": "getAccidentCar",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicedetailvehicleservice.GetAccidentCar"
+		}],
+		"returnType": "th.vehicles.webservicedetailvehicleservice.GetAccidentCarResponse"
+	}, {
+		"name": "getCarByKey",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicedetailvehicleservice.GetCarByKey"
+		}],
+		"returnType": "th.vehicles.webservicedetailvehicleservice.GetCarByKeyResponse"
+	}, {
+		"name": "getCarByKeyColor",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicedetailvehicleservice.GetCarByKeyColor"
+		}],
+		"returnType": "th.vehicles.webservicedetailvehicleservice.GetCarByKeyColorResponse"
+	}, {
+		"name": "getConfiscate",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicedetailvehicleservice.GetConfiscate"
+		}],
+		"returnType": "th.vehicles.webservicedetailvehicleservice.GetConfiscateResponse"
+	}, {
+		"name": "getCrime",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicedetailvehicleservice.GetCrime"
+		}],
+		"returnType": "th.vehicles.webservicedetailvehicleservice.GetCrimeResponse"
+	}, {
+		"name": "getCrimeEXT",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicedetailvehicleservice.GetCrimeEXT"
+		}],
+		"returnType": "th.vehicles.webservicedetailvehicleservice.GetCrimeEXTResponse"
+	}, {
+		"name": "getIntercept",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicedetailvehicleservice.GetIntercept"
+		}],
+		"returnType": "th.vehicles.webservicedetailvehicleservice.GetInterceptResponse"
+	}, {
+		"name": "getLostCar",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicedetailvehicleservice.GetLostCar"
+		}],
+		"returnType": "th.vehicles.webservicedetailvehicleservice.GetLostCarResponse"
+	}, {
+		"name": "getLostCarColor",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicedetailvehicleservice.GetLostCarColor"
+		}],
+		"returnType": "th.vehicles.webservicedetailvehicleservice.GetLostCarColorResponse"
+	}, {
+		"name": "getLostCarPenalty",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicedetailvehicleservice.GetLostCarPenalty"
+		}],
+		"returnType": "th.vehicles.webservicedetailvehicleservice.GetLostCarPenaltyResponse"
+	}, {
+		"name": "getPerson",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicedetailvehicleservice.GetPerson"
+		}],
+		"returnType": "th.vehicles.webservicedetailvehicleservice.GetPersonResponse"
+	}, {
+		"name": "getPersonCRIME",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicedetailvehicleservice.GetPersonCRIME"
+		}],
+		"returnType": "th.vehicles.webservicedetailvehicleservice.GetPersonCRIMEResponse"
+	}, {
+		"name": "getPersonVEHICLE",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicedetailvehicleservice.GetPersonVEHICLE"
+		}],
+		"returnType": "th.vehicles.webservicedetailvehicleservice.GetPersonVEHICLEResponse"
+	}, {
+		"name": "getTicketMBV",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicedetailvehicleservice.GetTicketMBV"
+		}],
+		"returnType": "th.vehicles.webservicedetailvehicleservice.GetTicketMBVResponse"
+	}, {
+		"name": "getTickets",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicedetailvehicleservice.GetTickets"
+		}],
+		"returnType": "th.vehicles.webservicedetailvehicleservice.GetTicketsResponse"
+	}, {
+		"name": "getTrcByKey",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicedetailvehicleservice.GetTrcByKey"
+		}],
+		"returnType": "th.vehicles.webservicedetailvehicleservice.GetTrcByKeyResponse"
+	}, {
+		"name": "getTrcByKeyColor",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicedetailvehicleservice.GetTrcByKeyColor"
+		}],
+		"returnType": "th.vehicles.webservicedetailvehicleservice.GetTrcByKeyColorResponse"
+	}],
+	"serviceType": "JSON-RPC",
+	"serviceURL": "WebServiceDetailVehicleService.json"
+}

@@ -1,0 +1,12 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.oracdgs9db.data.DatPicMoi" table="DAT_PIC_MOI" schema="POLISMIS" dynamic-insert="false" dynamic-update="false">
+        <id name="pid" type="string">
+            <column name="PID" length="13"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="picNo" type="blob">
+            <column name="PIC_NO"/>
+        </property>
+    </class>
+</hibernate-mapping>

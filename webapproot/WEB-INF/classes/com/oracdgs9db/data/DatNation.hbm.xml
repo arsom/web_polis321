@@ -1,0 +1,21 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.oracdgs9db.data.DatNation" table="DAT_NATION" schema="POLISMIS" dynamic-insert="false" dynamic-update="false">
+        <id name="natCode" type="string">
+            <column name="NAT_CODE" length="3"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="natEng" type="string">
+            <column name="NAT_ENG" length="30"/>
+        </property>
+        <property name="natThai" type="string">
+            <column name="NAT_THAI" length="30"/>
+        </property>
+        <property name="updId" type="string">
+            <column name="UPD_ID" length="13"/>
+        </property>
+        <property name="updDate" type="timestamp">
+            <column name="UPD_DATE"/>
+        </property>
+    </class>
+</hibernate-mapping>

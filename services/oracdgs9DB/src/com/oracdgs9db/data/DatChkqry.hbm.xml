@@ -1,0 +1,22 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.oracdgs9db.data.DatChkqry" table="DAT_CHKQRY" schema="POLISMIS" dynamic-insert="false" dynamic-update="false">
+        <composite-id name="id" class="com.oracdgs9db.data.DatChkqryId">
+            <key-property name="userId" type="string">
+                <column name="USER_ID" length="6"/>
+            </key-property>
+            <key-property name="qryPid" type="string">
+                <column name="QRY_PID" length="13"/>
+            </key-property>
+        </composite-id>
+        <property name="qryName" type="string">
+            <column name="QRY_NAME" length="30"/>
+        </property>
+        <property name="updId" type="string">
+            <column name="UPD_ID" length="13"/>
+        </property>
+        <property name="updDate" type="timestamp">
+            <column name="UPD_DATE"/>
+        </property>
+    </class>
+</hibernate-mapping>

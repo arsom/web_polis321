@@ -1,0 +1,40 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.oracdgs9db.data.DatQryLog" table="DAT_QRY_LOG" schema="POLISMIS" dynamic-insert="false" dynamic-update="false">
+        <composite-id name="id" class="com.oracdgs9db.data.DatQryLogId">
+            <key-property name="userId" type="string">
+                <column name="USER_ID" length="6"/>
+            </key-property>
+            <key-property name="orgCode" type="string">
+                <column name="ORG_CODE" length="5"/>
+            </key-property>
+            <key-property name="qryDate" type="string">
+                <column name="QRY_DATE" length="8"/>
+            </key-property>
+            <key-property name="seqNo" type="long">
+                <column name="SEQ_NO" precision="12"/>
+            </key-property>
+            <key-property name="condition" type="string">
+                <column name="CONDITION"/>
+            </key-property>
+            <key-property name="sysDesc" type="string">
+                <column name="SYS_DESC"/>
+            </key-property>
+            <key-property name="conGroup" type="string">
+                <column name="CON_GROUP" length="100"/>
+            </key-property>
+            <key-property name="ipAddr" type="string">
+                <column name="IP_ADDR" length="20"/>
+            </key-property>
+            <key-property name="updDate" type="timestamp">
+                <column name="UPD_DATE"/>
+            </key-property>
+            <key-property name="qryGroup" type="string">
+                <column name="QRY_GROUP" length="2"/>
+            </key-property>
+            <key-property name="qrySource" type="string">
+                <column name="QRY_SOURCE" length="8"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

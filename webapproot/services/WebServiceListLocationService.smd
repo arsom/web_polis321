@@ -1,0 +1,21 @@
+{
+	"methods": [{
+		"name": "getPersonList",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.location.webservicelistlocationservice.GetPersonList"
+		}],
+		"returnType": "th.location.webservicelistlocationservice.GetPersonListResponse"
+	}, {
+		"name": "getPlaceList",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.location.webservicelistlocationservice.GetPlaceList"
+		}],
+		"returnType": "th.location.webservicelistlocationservice.GetPlaceListResponse"
+	}],
+	"serviceType": "JSON-RPC",
+	"serviceURL": "WebServiceListLocationService.json"
+}

@@ -1,0 +1,61 @@
+{
+	"methods": [{
+		"name": "getPerson",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.location.webservicedetaillocationservice.GetPerson"
+		}],
+		"returnType": "th.location.webservicedetaillocationservice.GetPersonResponse"
+	}, {
+		"name": "getPersonVInfor",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.location.webservicedetaillocationservice.GetPersonVInfor"
+		}],
+		"returnType": "th.location.webservicedetaillocationservice.GetPersonVInforResponse"
+	}, {
+		"name": "getPlace",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.location.webservicedetaillocationservice.GetPlace"
+		}],
+		"returnType": "th.location.webservicedetaillocationservice.GetPlaceResponse"
+	}, {
+		"name": "getPlaceHisCase",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.location.webservicedetaillocationservice.GetPlaceHisCase"
+		}],
+		"returnType": "th.location.webservicedetaillocationservice.GetPlaceHisCaseResponse"
+	}, {
+		"name": "getPlacePeopleInvol",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.location.webservicedetaillocationservice.GetPlacePeopleInvol"
+		}],
+		"returnType": "th.location.webservicedetaillocationservice.GetPlacePeopleInvolResponse"
+	}, {
+		"name": "getPlaceTypePerson",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.location.webservicedetaillocationservice.GetPlaceTypePerson"
+		}],
+		"returnType": "th.location.webservicedetaillocationservice.GetPlaceTypePersonResponse"
+	}, {
+		"name": "getpersonOffender",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.location.webservicedetaillocationservice.GetpersonOffender"
+		}],
+		"returnType": "th.location.webservicedetaillocationservice.GetpersonOffenderResponse"
+	}],
+	"serviceType": "JSON-RPC",
+	"serviceURL": "WebServiceDetailLocationService.json"
+}

@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" springFile="WebServiceDetailLawsuitService.spring.xml" type="WebService" CRUDService="false" class="th.lawsuit.webservicedetaillawsuitservice.WebServiceDetailLawsuitService" id="WebServiceDetailLawsuitService">
+    <operation name="getCarLost">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetCarLost" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetCarLostResponse"/>
+    </operation>
+    <operation name="getCarLostColor">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetCarLostColor" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetCarLostColorResponse"/>
+    </operation>
+    <operation name="getCrime">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetCrime" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetCrimeResponse"/>
+    </operation>
+    <operation name="getCrimeComplainant">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetCrimeComplainant" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetCrimeComplainantResponse"/>
+    </operation>
+    <operation name="getCrimeOffender">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetCrimeOffender" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetCrimeOffenderResponse"/>
+    </operation>
+    <operation name="getCrimeOther">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetCrimeOther" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetCrimeOtherResponse"/>
+    </operation>
+    <operation name="getLostAsset">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetLostAsset" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetLostAssetResponse"/>
+    </operation>
+    <operation name="getLostAssetDetail">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetLostAssetDetail" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetLostAssetDetailResponse"/>
+    </operation>
+    <operation name="getLostCarCrime">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetLostCarCrime" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetLostCarCrimeResponse"/>
+    </operation>
+    <operation name="getLostMan">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetLostMan" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetLostManResponse"/>
+    </operation>
+    <operation name="getOjHis">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetOjHis" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetOjHisResponse"/>
+    </operation>
+    <operation name="getOjHisAcquitted">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetOjHisAcquitted" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetOjHisAcquittedResponse"/>
+    </operation>
+    <operation name="getOjHisJudgments">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetOjHisJudgments" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetOjHisJudgmentsResponse"/>
+    </operation>
+    <operation name="getPlanHis">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetPlanHis" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetPlanHisResponse"/>
+    </operation>
+    <operation name="getPlanHisName">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetPlanHisName" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetPlanHisNameResponse"/>
+    </operation>
+    <operation name="getPlanHisOtherName">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetPlanHisOtherName" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetPlanHisOtherNameResponse"/>
+    </operation>
+    <operation name="getPlanHisSpouse">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetPlanHisSpouse" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetPlanHisSpouseResponse"/>
+    </operation>
+    <operation name="getWanHisCrime">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetWanHisCrime" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetWanHisCrimeResponse"/>
+    </operation>
+    <operation name="getWanHisDownload">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetWanHisDownload" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetWanHisDownloadResponse"/>
+    </operation>
+    <operation name="getWanHisDownloadTraf">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetWanHisDownloadTraf" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetWanHisDownloadTrafResponse"/>
+    </operation>
+    <operation name="getWanHisEducateStatus">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetWanHisEducateStatus" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetWanHisEducateStatusResponse"/>
+    </operation>
+    <operation name="getWanHisEducation">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetWanHisEducation" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetWanHisEducationResponse"/>
+    </operation>
+    <operation name="getWanHisProv">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetWanHisProv" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetWanHisProvResponse"/>
+    </operation>
+    <operation name="getWanHisProvince">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetWanHisProvince" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetWanHisProvinceResponse"/>
+    </operation>
+    <operation name="getWanHisTraffic">
+        <parameter isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetWanHisTraffic" name="parameters"/>
+        <return isList="false" typeRef="th.lawsuit.webservicedetaillawsuitservice.GetWanHisTrafficResponse"/>
+    </operation>
+    <dataobjects>
+        <dataobject supportsQuickData="false" name="GetOjHisResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetOjHisResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetOjHisDetailType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetOjHisDetailType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetOjHisDetailType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cardId"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseOff"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="country"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="countryName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="idNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lastAddr"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lastProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lastProvName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nameEng"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nameOth"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nameThai"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nation"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nationName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="passportNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="race"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="raceName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="FName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="MName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="PName"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostAssetResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetLostAssetResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetAssetDetailType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetAssetDetailType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetAssetDetailType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astId"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseOff"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="charge"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenAmp"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenArea"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nameL"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nameT"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="police"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="position"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="recvDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="recvTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="untilDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="untilTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="LAddress"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="LComp"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="LProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="LProvName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="TAddress"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="TComp"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="TProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="TProvName"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetOjHisAcquittedResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetOjHisAcquittedResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetOjHisAcquittedType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetOjHisAcquittedType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetOjHisAcquittedType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="charge"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occupation"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ojAddr"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ojD"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ojHome"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ojNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ojOff"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ojProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ojStat"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ojoffName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ojprovName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ojstatName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="relCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="religionName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="spouseName"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostManResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetLostManResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetLostManDetailType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetLostManDetailType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetLostManDetailType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="address"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="assumeName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="country"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="countryName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenAmp"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenArea"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenProvName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="idNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lostDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="lostNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lostOff"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lostOffName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lostTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="lostY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lprovName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="name1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="name2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nationName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="passportNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="police1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="police2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="position1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="position2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="raceName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="recvDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="recvTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="relaName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="sex"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="tprovName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="untilDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="untilTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="FName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="LAddress"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="LAge"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="LBirthD"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="LNation"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="LOccupation"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="LProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="LRace"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="MName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="RName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="SName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="TAddress"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="TAge"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="TIdNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="TName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="TProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="TRela"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetWanHisEducation" javaType="th.lawsuit.webservicedetaillawsuitservice.GetWanHisEducation">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetWanHisCrimeResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetWanHisCrimeResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetWanHisCrimeType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetWanHisCrimeType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetWanHisCrimeType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="address"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="attFlag"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="birthDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="chaName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cmajorCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="crimeNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="crimeYear"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="idNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="name"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nationCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nationName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurCwCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurFromDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurFromTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurPlace"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurToDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurToTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="passportNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="polisName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="polisPos"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="raceCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="raceName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="releaseCause"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="releaseDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="releaseOthers"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="sex"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="stopCatchDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="uncName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="warrantDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="warrantDueDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="warrantLimitYear"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="warrantNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="warrantOrgCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="warrantPolisName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="warrantYear"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="worgName"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetOjHisJudgments" javaType="th.lawsuit.webservicedetaillawsuitservice.GetOjHisJudgments">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetWanHisDownload" javaType="th.lawsuit.webservicedetaillawsuitservice.GetWanHisDownload">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPlanHisName" javaType="th.lawsuit.webservicedetaillawsuitservice.GetPlanHisName">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCrimeOffenderResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetCrimeOffenderResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetOtherOffenderType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetOtherOffenderType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetOtherOffenderType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="age"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="attFlag"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="catchFlag"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="firstName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="idNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lastName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nationCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nationName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="offenderNO"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="sex"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="title"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCrimeComplainant" javaType="th.lawsuit.webservicedetaillawsuitservice.GetCrimeComplainant">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPlanHisSpouseResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetPlanHisSpouseResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetPlanHisSpouseType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetPlanHisSpouseType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetPlanHisSpouseType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="charge"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="chargeAddr"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="chargeD"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="chargeName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="kind"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="kindName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occupation"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="police"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="position"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="relCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="religionName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="spouseAddr"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="spouseName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="wantNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="wantOff"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="wantOffName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="wantY"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCrime" javaType="th.lawsuit.webservicedetaillawsuitservice.GetCrime">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPlanHis" javaType="th.lawsuit.webservicedetaillawsuitservice.GetPlanHis">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetWanHisTraffic" javaType="th.lawsuit.webservicedetaillawsuitservice.GetWanHisTraffic">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPlanHisOtherName" javaType="th.lawsuit.webservicedetaillawsuitservice.GetPlanHisOtherName">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetOjHis" javaType="th.lawsuit.webservicedetaillawsuitservice.GetOjHis">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCarLost" javaType="th.lawsuit.webservicedetaillawsuitservice.GetCarLost">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPlanHisNameResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetPlanHisNameResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetPlanHisNameType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetPlanHisNameType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetPlanHisNameType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="name"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetWanHisEducateStatusResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetWanHisEducateStatusResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetWanHisEducateStatusType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetWanHisEducateStatusType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetWanHisEducateStatusType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="unCause"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="uncName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="uwantD"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="uwantNo"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostCarCrimeResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetLostCarCrimeResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetCarLostDetailCrimeType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetCarLostDetailCrimeType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetCarLostDetailCrimeType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="brandName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carProvDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carType"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carTypeName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="chaName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="colorName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="crimeNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="crimeYear"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="fuel"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="historyDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="kind"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="kindName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="model"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="numbody"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="numeng"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occAddr"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occProvName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurCwCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurFromDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurFromTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurPlace"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurToDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurToTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ownAddr"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ownName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ownProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ownProvName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="polisName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="polisPos"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicleBnameCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicleColourCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicleCwCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicleNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicleRegNo1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="vehicleRegNo2"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCrimeComplainantResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetCrimeComplainantResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetOtherComplainantType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetOtherComplainantType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetOtherComplainantType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="age"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="complainerNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="firstName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="idNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lastName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nationCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nationName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="sex"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="title"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SQLException" javaType="th.lawsuit.webservicedetaillawsuitservice.SQLException"/>
+        <dataobject supportsQuickData="false" name="GetLostMan" javaType="th.lawsuit.webservicedetaillawsuitservice.GetLostMan">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPlanHisSpouse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetPlanHisSpouse">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetWanHisTrafficResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetWanHisTrafficResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetWanHisTrafficType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetWanHisTrafficType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetWanHisTrafficType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="attFlag"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carPerAddr1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carPerBirthday"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carPerCard"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carPerFname"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carPerLname"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carPerMname"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carPerNation"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carPerPasport"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carPerRace"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carSEQ"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cgtAccideAtdate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cgtAccideAttime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cgtAccideCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cgtAccideInquire"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cgtAccideInquireName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cgtAccideYY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nationName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="raceName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="releaseCause"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="releaseDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="releaseOthers"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="sex"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="title"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="uncName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="warrantDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="warrantDueDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="warrantLimitYear"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="warrantNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="warrantOrgCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="warrantPolisName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="warrantYear"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="worgName"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCarLostColorResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetCarLostColorResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetCarLostColorType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetCarLostColorType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetCarLostColorType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carColor"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="colorCarDesc"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetWanHisDownloadTraf" javaType="th.lawsuit.webservicedetaillawsuitservice.GetWanHisDownloadTraf">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCarLostResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetCarLostResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetCarLostDetailType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetCarLostDetailType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetCarLostDetailType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="action"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="brandName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carBrand"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carFuel"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carId"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carKind"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carModel"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carNumbody"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carNumeng"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carOccAddr"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carOccComp"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carOccFname"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carOccLname"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carOccProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carOccProv1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carOffProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carOwnAddr"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carOwnComp"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carOwnFname"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carOwnLname"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carOwnProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carPlate1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carPlate2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carProvName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carRemark"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="carSEQ"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="carType"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseOff"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="charge"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="fualName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenAmp"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenArea"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="kindName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occProvName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ownProvName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="police"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="position"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="untilDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="untilTime"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetWanHisProv" javaType="th.lawsuit.webservicedetaillawsuitservice.GetWanHisProv">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostCarCrime" javaType="th.lawsuit.webservicedetaillawsuitservice.GetLostCarCrime">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetWanHisCrime" javaType="th.lawsuit.webservicedetaillawsuitservice.GetWanHisCrime">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetWanHisDownloadResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetWanHisDownloadResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetWanHisDownloadType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetWanHisDownloadType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetWanHisDownloadType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="warrantDoc"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCrimeOtherResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetCrimeOtherResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetOtherDetailType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetOtherDetailType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetOtherDetailType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cmajorCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="complainTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="crimYear"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="crimeNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurCwCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurFromDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurFromTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurPlace"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurToDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurToTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="pjvNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provName"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetOjHisJudgmentsResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetOjHisJudgmentsResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetOjHisJudgmentsType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetOjHisJudgmentsType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetOjHisJudgmentsType">
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="casebNO"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="casebY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caserNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caserY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="judge"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetWanHisEducateStatus" javaType="th.lawsuit.webservicedetaillawsuitservice.GetWanHisEducateStatus">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetWanHisProvResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetWanHisProvResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetWanHisProvType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetWanHisProvType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetWanHisProvType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="locCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="locName"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCarLostColor" javaType="th.lawsuit.webservicedetaillawsuitservice.GetCarLostColor">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPlanHisResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetPlanHisResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetPlanHisDetailType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetPlanHisDetailType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetPlanHisDetailType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="birthD"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cardId"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cardType"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="idNO"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lastAddr"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lastProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lastProvName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nation"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nationName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="passportNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="race"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="raceName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="sex"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="FAddr"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="FName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="MAddr"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="MName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="PName"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetWanHisProvince" javaType="th.lawsuit.webservicedetaillawsuitservice.GetWanHisProvince">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCrimeOffender" javaType="th.lawsuit.webservicedetaillawsuitservice.GetCrimeOffender">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCrimeResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetCrimeResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetCrimeDetailType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetCrimeDetailType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetCrimeDetailType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="age1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="age2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="catchShow"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="complainDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="complainTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="crimeNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="crimeYear"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="firstName1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="firstName2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="idNo1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="idNo2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lastName1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lastName2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nationCode1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nationCode2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nationName1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nationName2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurCwCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurFromDate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurFromTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurPlace"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurToTime"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="occurTodate"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="org"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="orgCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="pjvNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="polisName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="serioursNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="serioursYear"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="sex1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="sex2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="title1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="title2"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetWanHisDownloadTrafResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetWanHisDownloadTrafResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetWanHisDownloadType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetWanHisEducationResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetWanHisEducationResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetWanHisDetailEducationType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetWanHisDetailEducationType" javaType="th.lawsuit.webservicedetaillawsuitservice.SetWanHisDetailEducationType">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="ampName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="attFlag"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="birthD"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cardId"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cardType"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseNO"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseOff"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="caseOffName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caseY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="casebNO"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="casebY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caserNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="caserY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="charge"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="country"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="countryName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="exD"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="exY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenAddr"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenAmp"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenD"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="happenT"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="idNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lastAddr"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lastProv"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="lastProvName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="name1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="name2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nation"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="nationName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="passportNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="police"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="position"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="procD"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="procNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="procOff"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="procOffName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="procY"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="provName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="race"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="raceName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="sex"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="untilD"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="untilT"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="wantD"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="wantName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="wantNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="wantOff"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="wantOffName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="wantPosition"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="wantY"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetOjHisAcquitted" javaType="th.lawsuit.webservicedetaillawsuitservice.GetOjHisAcquitted">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostAsset" javaType="th.lawsuit.webservicedetaillawsuitservice.GetLostAsset">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostAssetDetailResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetLostAssetDetailResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetAssetDetail2Type" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="SetAssetDetail2Type" javaType="th.lawsuit.webservicedetaillawsuitservice.SetAssetDetail2Type">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astAmt"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astBrand"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astDesc"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astGroup"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="astType"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="cctMakerCode"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="gunNo"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="stypeName"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="typeName"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetPlanHisOtherNameResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetPlanHisOtherNameResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetPlanHisNameType" name="returns"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetLostAssetDetail" javaType="th.lawsuit.webservicedetaillawsuitservice.GetLostAssetDetail">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg3"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetCrimeOther" javaType="th.lawsuit.webservicedetaillawsuitservice.GetCrimeOther">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg0"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg1"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="arg2"/>
+        </dataobject>
+        <dataobject supportsQuickData="false" name="GetWanHisProvinceResponse" javaType="th.lawsuit.webservicedetaillawsuitservice.GetWanHisProvinceResponse">
+            <element allowNull="false" isList="true" typeRef="th.lawsuit.webservicedetaillawsuitservice.SetWanHisProvType" name="returns"/>
+        </dataobject>
+    </dataobjects>
+</service>

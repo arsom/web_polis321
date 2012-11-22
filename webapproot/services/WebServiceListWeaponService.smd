@@ -1,0 +1,53 @@
+{
+	"methods": [{
+		"name": "getCrimeList",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.weapon.webservicelistweaponservice.GetCrimeList"
+		}],
+		"returnType": "th.weapon.webservicelistweaponservice.GetCrimeListResponse"
+	}, {
+		"name": "getCrimeList2",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.weapon.webservicelistweaponservice.GetCrimeList2"
+		}],
+		"returnType": "th.weapon.webservicelistweaponservice.GetCrimeList2Response"
+	}, {
+		"name": "getCrimeListGun",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.weapon.webservicelistweaponservice.GetCrimeListGun"
+		}],
+		"returnType": "th.weapon.webservicelistweaponservice.GetCrimeListGunResponse"
+	}, {
+		"name": "getLostAssetList",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.weapon.webservicelistweaponservice.GetLostAssetList"
+		}],
+		"returnType": "th.weapon.webservicelistweaponservice.GetLostAssetListResponse"
+	}, {
+		"name": "getPersonList",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.weapon.webservicelistweaponservice.GetPersonList"
+		}],
+		"returnType": "th.weapon.webservicelistweaponservice.GetPersonListResponse"
+	}, {
+		"name": "getPlanHisList",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.weapon.webservicelistweaponservice.GetPlanHisList"
+		}],
+		"returnType": "th.weapon.webservicelistweaponservice.GetPlanHisListResponse"
+	}],
+	"serviceType": "JSON-RPC",
+	"serviceURL": "WebServiceListWeaponService.json"
+}

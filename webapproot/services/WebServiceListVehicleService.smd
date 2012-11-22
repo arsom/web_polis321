@@ -1,0 +1,85 @@
+{
+	"methods": [{
+		"name": "getAccidentCarList",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicelistvehicleservice.GetAccidentCarList"
+		}],
+		"returnType": "th.vehicles.webservicelistvehicleservice.GetAccidentCarListResponse"
+	}, {
+		"name": "getCarList",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicelistvehicleservice.GetCarList"
+		}],
+		"returnType": "th.vehicles.webservicelistvehicleservice.GetCarListResponse"
+	}, {
+		"name": "getConfiscateList",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicelistvehicleservice.GetConfiscateList"
+		}],
+		"returnType": "th.vehicles.webservicelistvehicleservice.GetConfiscateListResponse"
+	}, {
+		"name": "getCrimeList",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicelistvehicleservice.GetCrimeList"
+		}],
+		"returnType": "th.vehicles.webservicelistvehicleservice.GetCrimeListResponse"
+	}, {
+		"name": "getInterceptList",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicelistvehicleservice.GetInterceptList"
+		}],
+		"returnType": "th.vehicles.webservicelistvehicleservice.GetInterceptListResponse"
+	}, {
+		"name": "getLostCarList",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicelistvehicleservice.GetLostCarList"
+		}],
+		"returnType": "th.vehicles.webservicelistvehicleservice.GetLostCarListResponse"
+	}, {
+		"name": "getLostCarList2",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicelistvehicleservice.GetLostCarList2"
+		}],
+		"returnType": "th.vehicles.webservicelistvehicleservice.GetLostCarList2Response"
+	}, {
+		"name": "getPersonList",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicelistvehicleservice.GetPersonList"
+		}],
+		"returnType": "th.vehicles.webservicelistvehicleservice.GetPersonListResponse"
+	}, {
+		"name": "getTicketList",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicelistvehicleservice.GetTicketList"
+		}],
+		"returnType": "th.vehicles.webservicelistvehicleservice.GetTicketListResponse"
+	}, {
+		"name": "getTrcList",
+		"operationType": null,
+		"parameters": [{
+			"name": "parameters",
+			"type": "th.vehicles.webservicelistvehicleservice.GetTrcList"
+		}],
+		"returnType": "th.vehicles.webservicelistvehicleservice.GetTrcListResponse"
+	}],
+	"serviceType": "JSON-RPC",
+	"serviceURL": "WebServiceListVehicleService.json"
+}

@@ -1,0 +1,126 @@
+/*start stack menu*/
+.ui-stackmenu, .ui-stackmenu1 {
+	position: relative;
+}
+
+.ui-stackmenu-item, .ui-stackmenu-item1 {
+	position: absolute;
+}
+
+#stack1 {
+			width:251px;
+			height: 177px;
+			padding: 0;
+			position: absolute;
+			left: 440px;
+			*+left:365px;
+			left: 500px\0/;
+			/*bottom: 50px;*/
+		}
+#stack {
+			
+			
+			width:251px;
+			height: 177px;
+			padding: 0;
+			position: absolute;
+			left: 710px;
+			/*bottom: 10px;*/
+			*+left:640px;
+			left: 770px\0/;
+		}	
+		
+#stack .trigger, #stack1 .trigger {
+			position: absolute;
+			z-index: 50;
+			width:251px;
+			height: 177px;
+			padding: 10px;
+			/*left: 0;
+			top: 0;*/
+			
+			cursor: pointer;
+	
+			
+		}
+
+#stack ul, #stack1 ul {
+			position: absolute;
+			top: 0;
+			left: 18px;
+			height: 64px;
+			width: 32px;
+			bottom: 0;
+			margin: 0;
+			padding: 0;
+			width:251px;
+			height: 177px;
+		}
+		
+#stack ul li, #stack1 ul li {
+			display: block;
+			padding: 0px;
+			width:251px;
+			height: 177px;
+			margin: 6px 0;
+		}
+		
+#stack ul li .title, #stack1 ul li .title {
+			display: none;
+		}
+		
+#stack ul li a:hover .title, #stack1 ul li a:hover .title {
+			display: block;
+			position: absolute;
+			right: 38px;
+			top: 8px;
+			padding: 1px 8px;
+			height: 14px;
+			font-size: 11px;
+			background-color: #fff;
+			color: #333;
+			font-family: Arial, sans-serif;
+			-moz-border-radius: 8px;
+			-webkit-border-radius: 8px;
+			border-radius: 8px;
+			
+		}
+		
+#stack ul li img, #stack1 ul li img {
+			/*border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			box-shadow: 0 0 5px #222;
+			-webkit-box-shadow: 0 0 5px #222;
+			-moz-box-shadow: 0 0 5px #222;
+			-o-box-shadow: 0 0 5px #222;
+			border: none 0;
+			padding: 2px;
+			background-color: #fff;*/
+			border:none\0/;
+			*+border:none;
+		}
+		
+#stack ul li a:hover img, #stack1 ul li a:hover img,
+#stack ul li a:hover .title, #stack1 ul li a:hover .title {
+			box-shadow: 0 0 10px #00a;
+			-webkit-box-shadow: 0 0 10px #00a;
+			-moz-box-shadow: 0 0 10px #00a;
+			-o-box-shadow: 0 0 10px #00a;
+		}
+		
+		
+		
+#stack .trigger, #stack1 .trigger {
+			/*border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			box-shadow: 0 0 3px #222;
+			-webkit-box-shadow: 0 0 3px #222;
+			-moz-box-shadow: 0 0 3px #222;
+			-o-box-shadow: 0 0 3px #222;
+			background-color: #7ee6ff;*/
+		}
+
+
+/********************************************/

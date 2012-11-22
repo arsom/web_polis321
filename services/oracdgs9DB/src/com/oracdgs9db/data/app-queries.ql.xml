@@ -1,0 +1,15 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <meta attribute="@design.default-queries"/>
+    <query name="selDatMatchSourceByCode">
+        <query-param name="code" type="java.lang.String"/>
+        FROM DatMatchSource WHERE groupCode=:code
+    </query>
+    <query name="selDatGroupC">
+        SELECT groupId As id, groupCode As code, groupDesc As desc, groupMom As mom FROM DatGroupC
+    </query>
+    <query name="selStartApp">
+        <query-param name="user" type="java.lang.String"/>
+        SELECT log.id.seqNo As seq, log.id.qryGroup As group, log.id.qrySource As source FROM DatQryLogNew As log WHERE log.id.userId=:user AND log.id.qryDate IN (SELECT MAX(cast(id.qryDate As integer)) FROM DatQryLogNew WHERE id.userId=:user) AND log.id.seqNo IN (SELECT MAX(cast(id.seqNo As integer)) FROM DatQryLogNew WHERE id.userId=:user AND id.qryDate IN (SELECT MAX(cast(id.qryDate As integer)) FROM DatQryLogNew WHERE id.userId=:user))
+    </query>
+</hibernate-mapping>

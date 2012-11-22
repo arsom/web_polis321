@@ -1,0 +1,37 @@
+body.tundra .Container_CallResult .wmlayout .Container_CallResult-panel7 {
+	    background-image:url('resources/images/logos/tb2.png');
+}
+
+body.tundra .Container_CallResult .wmlayout .Container_CallResult-panel8 {
+	background-image:url('resources/images/logos/tb8.png');
+}
+
+body.tundra .Container_CallResult .wmlayout .Container_CallResult-panel9 {
+	background-image:url('resources/images/logos/tb4.png');
+}
+
+body.tundra .Container_CallResult .wmlayout .Container_CallResult-panel10 {
+	background-image:url('resources/images/logos/tb6.png');
+}
+
+body.tundra .Container_CallResult .wmlayout .Container_CallResult-label1 {
+	color:#F4C701;
+}
+
+body.tundra .Container_CallResult .wmlayout .Container_CallResult-pnlClose {
+	    background-image:url('resources/images/logos/btt_close.png');
+}
+
+body.tundra .Container_CallResult .wmlayout .Container_CallResult-pnlPrint {
+	    background-image:url('resources/images/logos/btt_print.png');
+}
+
+body.tundra .Container_CallResult .wmlayout .Container_CallResult-pnlClose:hover {
+    cursor:pointer;
+    background-image:url('resources/images/logos/btt_close_r.png');
+}
+
+body.tundra .Container_CallResult .wmlayout .Container_CallResult-pnlPrint:hover {
+    cursor:pointer;
+    background-image:url('resources/images/logos/btt_print_r.png');
+}

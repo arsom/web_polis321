@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.oracdgs9db.data.DatCancelCard" table="DAT_CANCEL_CARD" schema="POLISMIS" dynamic-insert="false" dynamic-update="false">
+        <id name="cardCode" type="string">
+            <column name="CARD_CODE" length="2"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="cardDesc" type="string">
+            <column name="CARD_DESC" length="100"/>
+        </property>
+        <property name="updId" type="string">
+            <column name="UPD_ID" length="13"/>
+        </property>
+        <property name="updDate" type="date">
+            <column name="UPD_DATE" length="7"/>
+        </property>
+    </class>
+</hibernate-mapping>
